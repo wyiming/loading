@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>报名_中拍平台</title>
+    <meta name="keywords" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta name="description" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/css/comm/comm.css">
+    <link rel="stylesheet" href="/themes/css/pages/apply.css">
+</head>
+
+<body>
+    <!--报名成功提示-->
+    <div class="dialog succDiv">
+        <div class="dialogBg">
+            <span class="last_time"><em>5</em>s关闭页面</span>
+            <p class="pay-tit">您已报名成功！</p>
+            <p>请联系拍卖企业线下支付保证金！</p>
+        </div>
+    </div>
+    <div class="dialog errorDiv">
+        <div class="dialogBg">
+            <p class="apply-msg"></p>
+            <input type="button" value="确定" class="closeBtn">
+        </div>
+    </div>
+    <div class="sifa-head">
+        <div class="container-fluid">
+            <div class="container-title J-container-title">
+                <div class="nologin-info">
+                    <a target="_blank" href="/index.html" class="float-left shop-test">进入测试版</a>
+                    <p>
+                        <a class="shop-official" href="/shop" target="_blank">拍卖企业后台</a>
+                        <a href="/pages/user/register.html">免费注册</a>
+                        <a href="/pages/user/login.html?redirect=http://zy.caa.test/index.html">登录</a>
+                    </p>
+                </div>
+            </div>
+            <div class="nav-con">
+                <div class="container">
+                    <a href="/index.html" class="head-img">
+                        <img src="/themes/images/headbanner.png" alt="司法拍卖" class="caa-logo">
+                    </a>
+                    <div class="nav-wrap clearfix">
+                        <ul class="main-nav">
+                            <li>
+                                <a class="nav-a text14-fff" href="/index.html">首页</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff nav-sifa" href="https://sf.caa123.org.cn" target="_blank">司法</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/lots/list.html">标的</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/meeting/list.html">拍卖会</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/notice/list.html">拍卖公告</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/enterprises/list.html">拍卖企业</a>
+                            </li>
+                            <!--<li>
+                                <a class="nav-a text14-fff" href="/pages/personal/home.html">我的竞拍</a>
+                            </li>-->
+                        </ul>
+                        <div class="nav-search">
+                            <div class="other-nav">
+                                <a href="/pages/personal/home.html" class="color-333">我的竞拍</a>
+                            </div>
+                            <form class="search-form" action="/pages/lots/list.html" type="get">
+                                <input type="text" name="name" placeholder="搜索标的" class="search-input search-lot">
+                                <button class="search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="paystep">
+        <div class="opcy_new"></div>
+        <ul>
+            <li class="add_renz">
+                <div class="paystep-top">
+                    <img src="/themes/images/pay_succ.png" alt="请实名认证">
+                    <h3>请实名认证</h3>
+                </div>
+                <p>只有实名认证才能缴纳保证金</p>
+                <a href="/pages/personal/home.html?showuse=2">实名认证</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="apply-content">
+        <div class="container">
+            <div class="bail">
+                <div class="bail-section">
+                    <!--<p class="bailEnroll">您正在报名-->
+                    <!--<a href="javascript:void(0)" target="_blank" class="link"></a>司法拍卖项目的-->
+                    <!--<a href="javascript:void(0)" target="_blank" class="link" ></a>，需锁定保证金&nbsp;-->
+                    <!--<span class="price"><i class="">&yen;</i></span>-->
+                    <input type="hidden" id="price">
+                    <input type="hidden" id="isCorp">
+                    <input type="hidden" id="h_bidderName">
+                    <!--,请您勾选确认符合竞买条件后填写报名信息。-->
+                    <!--</p>-->
+                    <ul class="bail-msg">
+                        <li>拍卖公告：<span id="noticeTitle"></span></li>
+                        <li>标的名称：<span id="goodsTitle"></span></li>
+                        <li>保&nbsp;&nbsp;证&nbsp;金：<span class="price cash-price">¥<i class="yahei" id="despoit"></i></span></li>
+                    </ul>
+                    <span class="fee_span">,手续费&nbsp;<i class="yahei">&yen;<span class="fee_num fee_detail"></span></i>
+                    </span>
+                    <span class="fee_span">,合计&nbsp;<i class="yahei">&yen;<span class="fee_num total_fee"></span></i>
+                    </span>
+                    <p class="bailExplain">
+                        说明：此保证金仅适用于该项目。竞买成功后此保证金将直接冲抵成交价款，若未竞买成功则在竞买结束后2-3个工作日内原路退还。</p>
+                    <p class="bailExplain">
+                        注意：
+                        <a href="/pages/help/helpcenter_problem.html#e3" target="_blank">如何拿回保证金？</a>
+                        <a href="/pages/help/helpcenter_problem.html#e1" target="_blank">如何支付大额保证金？</a>
+                    </p>
+                </div>
+            </div>
+            <div class="bidder">
+                <div class="bidderSection">
+                    <div class="hd">
+                        <h3>
+                            <p class="title yahei"><span>1</span>竞买人条件确认</p>
+                            <p class="sub-title tips">因不符合条件参加竞买的，将取消您的竞得资格，竞买保证金不予退还并承担相应法律责任。</p>
+                        </h3>
+                    </div>
+                    <div class="bd agree">请确认您符合以下竞买条件：
+                        <div class="fields">
+                            <a class="checkbox"></a><input type="checkbox">竞买人成功竞得拍卖标的后，悔拍的后果：保证金不予退还并承担相应的法律责任。
+                            <span class="error-msg">
+                        <img src="/themes/images/icon-err-two.png" alt="">
+                        <em>请确认符合条件</em>
+                    </span>
+                        </div>
+                        <div class="fields">
+                            <a class="checkbox"></a><input type="checkbox">竞买人已阅读并同意
+                            <em class="link agree_link">《竞买人参拍须知》</em>，如未实地看样，视为接受标的所有瑕疵等细则
+                            <span class="error-msg">
+                        <img src="/themes/images/icon-err-two.png" alt="">
+                        <em>请阅读竞买人参拍须知</em>
+                    </span>
+                        </div>
+                        <div class="agree-content hidden">
+                            <div class="agree-detail">
+                                <p style="text-align: center;">
+                                    <span class="agree_bold">竞买人参拍须知</span>
+                                </p>
+                                <p class="agree-detail-title">一、竞买帐号、密码的使用</p>
+                                <p>凡在本平台上以竞买人的帐号和密码登陆后进行的操作，均被视为竞买人的行为，竞买人应当对以其帐号进行的所有活动和事件负法律责任。</p>
+                                <p>竞买人应当妥善保管在中拍平台注册的帐号及密码，且只限本人使用，不应将其帐号、密码转让或出借予他人/组织使用。如竞买人发现其帐号遭他人非法使用，应立即通知中拍平台。因黑客行为或用户故意或者过失导致帐号、密码遭他人非法使用，并造成竞买人自身损失，本平台不承担任何责任。</p>
+
+                                <p class="agree-detail-title">二、网上竞买风险</p>
+                                <p>由于互联网可能出现不稳定情况，不排除网络拍卖过程中发生网络故障（包括但不限于网络故障、电路故障、系统故障）以及被网络黑客恶意攻击等，网络竞买人必须充分估计上述原因导致网上竞价不同于现场竞价所带来的风险，如果发生上述情况以及本人操作差错所造成的损失由网络竞买人承担。网络竞买人放弃因此类情形要求本平台运营方承担任何赔偿责任。</p>
+                                <p>网络竞买人一旦参与网上竞价，即认同和接受网络拍卖的客观状态、拍卖会现场传导给客户端的拍卖标的图文信息和音频视频直播信号、拍卖师的主持、拍卖成交价的确认。</p>
+
+                                <p class="agree-detail-title">三、网上出价</p>
+                                <p>网上竞买人登录系统，在网络拍卖开始后，根据平台页面上显示的当前价格进行出价。系统提供固定的加价阶梯按钮，竞买人可以选择按钮出价。</p>
+                                <p>点击出价后，系统弹出对话框，网上竞买人点击“确认”即认同此价，不愿意出此价则选择“取消”。</p>
+                                <p>系统对竞买人的每次成功出价都做记录，出价最高的竞买人即成为拍卖标的的买受人，系统所记录的信息将是网上买受人有效性的重要依据。</p>
+
+                                <p class="agree-detail-title">四、免责声明</p>
+                                <p>1. 本平台以“按现状”的方式提供服务，而不带有任何保证或条件。此外，由于网络服务的特殊性以及技术水平的限制，本平台不就持续地、不受影响地或安全地接触本平台服务作出担保。同时，本平台也不对平台所涉及的技术及信息的有效性、准确性、正确性、可靠性、质量、稳定、完整和及时性作出任何承诺和保证，且本平台的运营可能受本平台无法控制的多种外部因素影响。</p>
+                                <p>2. 作为中立的平台提供方，中拍平台网络科技股份有限公司不是拍卖参加人，不以任何方式介入任何拍卖合同纠纷或者侵权纠纷等其他任何形式的争议。任何用户必须豁免本平台运营方的诉讼责任和义务方可使用本平台，否则，请立即停止使用本平台。</p>
+                                <p>3. 本平台上进行的所有拍卖活动，是由拍卖企业自主主持并由竞买人自主参与。本平台仅作为网络交易场所，不对竞买人等拍卖参与方的注册数据的真实性及其履行其在拍卖协议中各项义务的能力作出担保。</p>
+                                <p>4. 除特别声明由平台提供外，本平台上拍卖企业资料均由用户自行上传，由用户承担全部责任。本平台不就由上述资料产生或在传送或递交全部或部分资料过程中产生的延误、不准确、错误和遗漏或从中产生或由此产生的任何损害赔偿，以任何形式，向用户或任何第三方负责。</p>
+                                <p>5. 除非法律法规明确要求，或出现以下情况，否则，本平台没有义务对所有用户、竞买人及其他拍卖参与人的注册数据、拍卖交易行为以及与交易有关的其它事项进行事先审查：</p>
+                                <p>1) 本平台有合理的理由认为特定用户、竞买人及其他拍卖参与人及具体交易事项可能存在重大违法或违约情形；</p>
+                                <p>2) 本平台有合理的理由认为用户、竞买人及其他拍卖参与人在本平台的行为涉嫌违法或不当。</p>
+                                <p>6. 用户明确同意其使用本平台服务所存在的风险将完全由其自己承担；因使用本平台服务而产生的一切后果也由其自己承担，本平台对用户不承担任何责任。</p>
+                                <p>7. 由于目前行业技术水平的限制，本平台不保证网络服务一定能满足用户的要求，也不保证服务不会中断，对服务的及时性、安全性、准确性也都不作担保。</p>
+                                <p>8. 本平台不保证为向用户提供便利而设置的外部链接的准确性和完整性，同时，对于该等外部链接指向的不由本平台实际控制的任何网页上的内容，本平台不承担任何责任。</p>
+                                <p>9. 对于因不可抗力或本平台不能控制的原因造成的服务中断或其它缺陷，本平台不承担任何责任。</p>
+                                <p>10.本平台在任何情况下均不就因本平台的技术、服务或本协议而产生或与之有关的利润损失或任何特别、间接或后果性的损害（无论以何种方式产生，包括疏忽）承担任何责任。</p>
+                                <p>用户同意对其自身行为的合法性单独承担责任。用户同意本平台对本平台用户行为的合法性不承担责任。</p>
+                                <p class="agree-detail-title">五、附则</p>
+                                <p>1. 本规则由中拍平台网络科技股份有限公司制定并解释。中拍平台网络科技股份有限公司有权根据法律法规的变更和现实情况进行不定期修订。修订后的版本将会在本平台公布，自公布之日起生效。如您不同意相关变更，应当立即停止使用本平台服务。您继续使用本平台服务的，即表示您接受经修订的协议。</p>
+                                <p>2. 竞买人确定，已经完全、全面了解了竞买人参拍须知的全部内容，不存在任何的歧义，自愿接受上述全部的约束力。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bidderSection" id="bidder_section_div">
+                    <div class="hd">
+                        <h3>
+                            <p class="title yahei"><span>2</span>竞买人身份确认</p>
+                            <p class="sub-title tips">标的物交割时将核实该信息，请保证其真实有效，如非本人购买，请提前与资产处置单位确认是否可行。</p>
+                        </h3>
+                    </div>
+                    <div class="bd">
+                        请确认您符合以下竞买条件：
+                        <table>
+                            <tr>
+                                <td class="labeld"><label>竞买人姓名：</label></td>
+                                <td class="fields">
+                                    <input type="text" id="bidderName" class="input normal-input card-name clearval" placeholder="竞买人姓名" maxlength="50">
+                                    <div class="error-msg name-error">
+                                        <img src="/themes/images/icon-err.png" alt="">
+                                        <em></em>
+                                    </div>
+                                </td>
+                                <!--<td class="fields" id="bidderName"><span style="color: #999;font-weight: normal;margin-left: 20px;">(竞价成功后，将以此身份办理过户，如有委托，请咨询资产处置单位)</span></td>-->
+                            </tr>
+                            <tr class="card-type">
+                                <td class="labeld"><label>证件类型：</label></td>
+                                <td class="fields">
+                                    <!--<select class="select" id="idType">
+                                        <option value="1">居民身份证</option>
+                                        <option value="2">中国公民护照</option>
+                                        <option value="3">台湾居民来往大陆通行证</option>
+                                        <option value="4">港澳居民来往内地通行证</option>
+                                        <option value="5">外国公民护照</option>
+                                        <option value="6">户口薄</option>
+                                        <option value="7">营业执照</option>
+                                        <option value="8">组织机构代码证</option>
+                                        <option value="9">事业法人登记证</option>
+                                        <option value="10">社会统一信用代码证</option>
+                                    </select>-->
+                                    <input type="text" class="input normal-input" id="idType" placeholder="" maxlength="50" disabled="disabled">
+                                    <input type="text" class="input normal-input card-num clearval" placeholder="请填写证件号码" maxlength="50">
+                                    <div class="error-msg card-error">
+                                        <img src="/themes/images/icon-err.png" alt="">
+                                        <em></em>
+                                    </div>
+                                    <div class="card-tips"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="labeld"><label>手机号码：</label></td>
+                                <td class="fields">
+                                    <input type="text" class="input small-input clearval" placeholder="请输入绑定的手机号" id="user_mobile" maxlength="11">
+                                    <span class="error-msg tel-error">
+                                <img src="/themes/images/icon-err.png" alt="">
+                                <em>手机号码为空或格式不正确</em>
+                            </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="bidderSection bidderCheck">
+                    <div class="hd">
+                        <h3>
+                            <p class="title yahei"><span>3</span>选择支付方式</p>
+                            <p class="sub-title tips">请选择支付方式</p>
+                        </h3>
+                    </div>
+                    <div class="pay_way">
+                        <a class="check_pay_way click_check"></a><span class="check_way">联系拍卖企业线下支付保证金</span>
+                        <a class="check_pay_way"></a><span class="check_way" style="color:#999">线上支付保证金<em>（暂未开放）</em></span>
+                    </div>
+                </div>
+                <div class="submit-content">
+                    <input type="submit" class="submit disabled" value="确认">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚-->
+    <div class="sifa-foot J-sifa-foot">
+    </div>
+    <script src="/scripts/loading.js?|now|"></script>
+</body>
+
+</html>

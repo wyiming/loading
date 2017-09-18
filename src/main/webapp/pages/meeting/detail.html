@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>废弃页面</title>
+    <meta name="keywords" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta name="description" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/themes/css/comm/comm.css" />
+    <link rel="stylesheet" type="text/css" href="/themes/css/pages/auction_detail.css">
+</head>
+
+<body>
+    <!-- 支付未完成 -->
+    <div class="dialog prompt pay-error">
+        <div class="dialogBg">
+            <h2><span class="close">×</span>保证金支付未成功</h2>
+            <div class="error-list">
+                <label class="pay-error-title">您可能因为以下原因导致保证金支付未成功：</label>
+                <ul class="pay-error-list">
+                    <li>
+                        支付环境影响，电脑上使用网银支付时请注意浏览器及版本，并合理设置网上支付额度
+                    </li>
+                    <li>
+                        如果支付中断，您下次可通过以下路径继续完成支付；电脑登陆中国拍卖行业协会，进入【我的竞拍】&gt;【
+                        <a href="/pages/person.html" target="_blank">参标的</a> 】
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <input class="sureBtn close_tip" type="button" value="我知道了">
+            </div>
+        </div>
+    </div>
+    <!-- 提示 -->
+    <div class="dialog prompt error-tip">
+        <div class="dialogBg">
+            <h2><span class="close">×</span>提示</h2>
+            <p class="error_msg">出价小于当前最高价，请重新出价</p>
+            <div class="btn">
+                <input class="sureBtn close_tip" type="button" value="确定">
+            </div>
+        </div>
+    </div>
+    <!-- 支付提示 -->
+    <div class="dialog payDiv">
+        <div class="dialogBg">
+            <h2><span class="pay_tip_close">×</span>网上支付提示</h2>
+            <p>请根据您的支付情况，点击下方按钮。</p>
+            <div class="btn">
+                <input class="successBtn" type="button" value="支付完成">
+                <input class="dangerBtn" type="button" value="支付遇到问题">
+            </div>
+        </div>
+    </div>
+    <!-- 出价 -->
+    <div class="dialog offerDiv">
+        <div class="dialogBg">
+            <h2><span class="close">×</span>出价</h2>
+            <h3><em id="jph"></em>号，您提交的竞价为：<a>¥<span id="check_price"></span></a><em id="upper_price"></em>。
+            </h3>
+
+            <div class="btn">
+                <input class="sureBtn submit_bid" type="button" value="确定">
+                <input class="closeBtn" type="button" value="取消">
+            </div>
+        </div>
+    </div>
+    <div class="sifa-head">
+        <div class="container-fluid">
+            <div class="container-title J-container-title">
+                <div class="nologin-info">
+                    <a target="_blank" href="/index.html" class="float-left shop-test">进入测试版</a>
+                    <p>
+                        <a class="shop-official" href="/shop" target="_blank">拍卖企业后台</a>
+                        <a href="/pages/user/register.html">免费注册</a>
+                        <a href="/pages/user/login.html?redirect=http://zy.caa.test/index.html">登录</a>
+                    </p>
+                </div>
+            </div>
+            <div class="nav-con">
+                <div class="container">
+                    <a href="/index.html" class="head-img">
+                        <img src="/themes/images/headbanner.png" alt="司法拍卖" class="caa-logo">
+                    </a>
+                    <div class="nav-wrap clearfix">
+                        <ul class="main-nav">
+                            <li>
+                                <a class="nav-a text14-fff" href="/index.html">首页</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff nav-sifa" href="https://sf.caa123.org.cn" target="_blank">司法</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/lots/list.html">标的</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/meeting/list.html">拍卖会</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/notice/list.html">拍卖公告</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/enterprises/list.html">拍卖企业</a>
+                            </li>
+                            <!--<li>
+                                <a class="nav-a text14-fff" href="/pages/personal/home.html">我的竞拍</a>
+                            </li>-->
+                        </ul>
+                        <div class="nav-search">
+                            <div class="other-nav">
+                                <a href="/pages/personal/home.html" class="color-333">我的竞拍</a>
+                            </div>
+                            <form class="search-form" action="/pages/lots/list.html" type="get">
+                                <input type="text" name="name" placeholder="搜索标的" class="search-input search-lot">
+                                <button class="search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--tips -->
+    <p class="tips_title">
+        拍卖会 > 安吉丽娜拍卖会 > 杭州市新一区法院一辆奔驰车
+    </p>
+    <div class="sifa-content-div">
+        <div id="page" class="sf-wrap">
+            <div class="time-info" id="timeDif" style="display: none;">
+                提醒：您电脑时间和系统时间不一致，为避免错过合理的出价时间，请尽早出价！
+            </div>
+            <div class="grid-c">
+                <div class="module-sf" data-spm="detail">
+                    <a href="#" class="pre_auctiongood">上一个标的</a>
+                    <a href="#" class="next_auctiongood">下一个标的</a>
+                    <input type="hidden" id="my-jmh" />
+                    <div class="pm-main clearfix">
+                        <h1 id="bid_name">
+                            <span>正在进行</span>【第一次拍卖】襄阳市樊城区人民路219号冠通上城3幢2单元17层3室的房屋
+                        </h1>
+                        <div class="pm-main-l">
+                            <div id="showbox">
+                                <div class="main-img">
+                                    <div><img src="/themes/images/xx1.jpg" class="showimg"></div>
+                                    <span id="moveposition"></span>
+                                </div>
+                                <p id="bigpicshow">
+                                    <img src="/group1/M00/01/31/Cj0BKFkJe_SAXp1uAAA5flQ3Ywc158.jpg">
+                                </p>
+                            </div>
+                            <!--展示图片盒子-->
+                            <div id="showsum">
+                                <p class="dis_block_parent">
+                                    <span class="dis_block_child"><img src="/themes/images/xx1.jpg"></span>
+                                    <span class="dis_block_child"><img src="/themes/images/xx2.jpg"></span>
+                                    <span class="dis_block_child"><img src="/themes/images/xx3.jpg"></span>
+                                    <span class="dis_block_child"><img src="/themes/images/xx4.jpg"></span>
+                                    <span class="dis_block_child"><img src="/themes/images/xx5.jpg"></span>
+                                </p>
+                            </div>
+                            <!--展示图片里边-->
+                        </div>
+                        <div class="pm-main-l auction-interaction">
+                            <!-- 竞拍开始前 未交保证金-->
+                            <div style="display: none" class="bzj_state">
+                                <ul class="pm-bid-eyebrow">
+                                    <li id="sf-price">
+                                        <span class="title">当前价</span>
+                                        <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                        <em class="rmb-unit">元</em>
+                                    </li>
+                                    <li class="J_PItem" id="sf-countdown">
+                                        <span class="title J_TimeTitle">预&nbsp&nbsp计</span>
+                                        <span class="countdown J_TimeLeft"><var id="day">00</var><em>天</em><var id="hour">18</var><em>时</em><var id="minute">55</var><em>分</em><var id="second">03.2</var><em>秒</em></span>
+                                        <span id="J_Delay" class="pm-delay"><em class="delayCnt">0</em>次延时</span>
+                                    </li>
+                                </ul>
+                                <div class="pm-bid-eye">
+                                    <div class="pm-bid pm-before-apply bid_ing" style="display: block">
+                                        <ul class="pm-bid-eyebrow">
+                                            <li id="sf-price">
+                                                <span class="title">保证金</span>
+                                                <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                                <em class="rmb-unit">元</em>
+                                            </li>
+                                        </ul>
+                                        <dl class="pm-message clearfix">
+                                            <dt class="pm-h"></dt>
+                                            <dd>
+                                                <div class="line">
+                                                    <input type="hidden" id="lot_status">
+                                                    <!--<a href="javascript:void(0)" id="enter_jjroom_btn" target="_blank" class="pm-button-new pm-apply-button loading i-b">进入竞价大厅</a>-->
+                                                    <a href="javascript:void(0)" id="pay_bzj_btn" target="_blank" class="pm-button-new pay-bzj-button loading i-b">申请参拍并支付保证金</a>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="pm-bid pm-before-apply bid_end" style="display: none;">
+                                        <p class="pm-stop"><img src="../images/jieshu.png">本场拍卖已结束！</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 竞拍开始后 未交保证金-->
+                            <div style="display: block" class="bzj_state">
+                                <ul class="pm-bid-eyebrow">
+                                    <li id="sf-price">
+                                        <span class="title">当前价</span>
+                                        <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                        <em class="rmb-unit">元</em>
+                                    </li>
+                                    <li class="J_PItem" id="sf-countdown">
+                                        <span class="title J_TimeTitle">距结束</span>
+                                        <span class="countdown J_TimeLeft"><var id="day">00</var><em>天</em><var id="hour">18</var><em>时</em><var id="minute">55</var><em>分</em><var id="second">03.2</var><em>秒</em></span>
+                                        <span id="J_Delay" class="pm-delay"><em class="delayCnt">0</em>次延时</span>
+                                    </li>
+                                </ul>
+                                <div class="pm-bid-eye">
+                                    <div class="pm-bid pm-before-apply bid_ing" style="display: block">
+                                        <ul class="pm-bid-eyebrow">
+                                            <li id="sf-price">
+                                                <span class="title">保证金</span>
+                                                <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                                <em class="rmb-unit">元</em>
+                                            </li>
+                                        </ul>
+                                        <dl class="pm-message clearfix">
+                                            <dt class="pm-h"></dt>
+                                            <dd>
+                                                <div class="line">
+                                                    <input type="hidden" id="lot_status">
+                                                    <a href="javascript:void(0)" id="pay_bzj_btn" target="_blank" class="pm-button-new pay-bzj-button loading i-b">申请参拍并支付保证金</a>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="pm-bid pm-before-apply bid_end" style="display: none;">
+                                        <p class="pm-stop"><img src="../images/jieshu.png">本场拍卖已结束！</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 已交保证金-->
+                            <div style="display: block" class="bzj_state">
+                                <ul class="pm-bid-eyebrow">
+                                    <li id="sf-price">
+                                        <span class="title">当前价</span>
+                                        <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                        <em class="rmb-unit">元</em>
+                                    </li>
+                                    <li class="J_PItem" id="sf-countdown">
+                                        <span class="title J_TimeTitle">距结束</span>
+                                        <span class="countdown J_TimeLeft"><var id="day">00</var><em>天</em><var id="hour">18</var><em>时</em><var id="minute">55</var><em>分</em><var id="second">03.2</var><em>秒</em></span>
+                                        <span id="J_Delay" class="pm-delay"><em class="delayCnt">0</em>次延时</span>
+                                    </li>
+                                </ul>
+                                <div class="pm-bid-eye">
+                                    <div class="pm-bid pm-before-apply bid_ing" style="display: block">
+                                        <ul class="pm-bid-eyebrow">
+                                            <li id="sf-price">
+                                                <span class="title">保证金</span>
+                                                <span class="pm-current-price J_Price" id="_curr_price"><em>974,814</em></span>
+                                                <em class="rmb-unit">元</em>
+                                                <span class="havePay">已缴纳</span>
+                                            </li>
+                                        </ul>
+                                        <dl class="pm-message clearfix">
+                                            <dt class="pm-h"></dt>
+                                            <dd>
+                                                <div class="line">
+                                                    <input type="hidden" id="lot_status">
+                                                    <a href="javascript:void(0)" id="enter_jjroom_btn" target="_blank" class="pm-button-new pm-apply-button loading i-b">进入竞价大厅</a>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="pm-bid pm-before-apply bid_end" style="display: none;">
+                                        <p class="pm-stop"><img src="../images/jieshu.png">本场拍卖已结束！</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 竞拍结束-->
+                            <div style="display: block" class="bzj_state">
+                                <ul class="pm-bid-eyebrow end_time">
+                                    <li class="J_PItem" id="sf-countdown">
+                                        <span class="title J_TimeTitle">结束时间</span>
+                                        <span class="time">5月9日 15：30</span>
+                                    </li>
+                                </ul>
+                                <div class="pm-bid tex-center">
+                                    <p class="pp_endstate">本标的拍卖已结束</p>
+                                    <p class="currentrate">成交价<span class="colorred">999999</span><em class="colorred">元</em></p>
+                                    <p class="result">非常遗憾，您没能获得本标的。<a href="#" class="colorred">查看保证金</a></p>
+                                    <a href="javascript:void(0)" id="enter_jjroom_btn" target="_blank" class="pm-button-new pm-apply-button loading i-b">进入竞价大厅</a>
+                                </div>
+                            </div>
+                            <p class="jph_box">
+                                此页面仅支持申请参拍并支付保证金，如果要出价，请到竞拍现场出价。<a href="#" target="_blank" class="enter-jpRoom">进入竞拍大厅</a>
+                            </p>
+                            <div class="my-info clearfix" id="J_User">
+                                <input type="hidden" id="isPrior">
+                                <ul>
+                                    <li><img src="../images/usericon.png">我的竞买号<span id="show_jmh"></span></li>
+                                    <li>已出价:<span id="show_time"></span></li>
+                                </ul>
+                            </div>
+                            <div class="pm-bid-mouse p13_0">
+                                <p class="dis_block_parent f12 pl20 lineh26">
+                                    <span class="dis_block_child w265">起&nbsp&nbsp拍&nbsp&nbsp价：&yen;</span>
+                                    <span class="dis_block_child w250">加价幅度：<em>&yen;2000</em></span>
+                                    <span class="dis_block_child">优先竞买人：无</span>
+                                </p>
+                                <p class="dis_block_parent f12 pl20 lineh26">
+                                    <span class="dis_block_child w265">评&nbsp&nbsp估&nbsp&nbsp价：<em>&yen;2000</em></span>
+                                    <span class="dis_block_child w250">自由竞卖时间：2天</span>
+                                </p>
+                                <p class="dis_block_parent f12 pl20 lineh26">
+                                    <span class="dis_block_child w265">保&nbsp&nbsp证&nbsp&nbsp金：&yen;300</span>
+                                    <span class="dis_block_child w250">限时竞卖时间：2小时</span>
+                                </p>
+                            </div>
+                            <p class="lineheight26 pmjg-message">
+                                拍卖机构：北京中世纪拍卖行<br> 联系电话：15245623584
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pm-bid-right">
+                        <div class="pai-info">
+                            <p>
+                                <span>竞价规则：</span>
+                                <em>一人报名且出价，即可成交</em>
+                            </p>
+                            <p>
+                                <span>处置法院：</span>
+                                <a target="_blank" href="#" id="court">襄阳市樊城区人民法院</a>
+                            </p>
+                            <p>
+                                <span>联系方式：</span>
+                                <em id="contact_info">陈法官 18007277087</em>
+                            </p>
+                        </div>
+                        <!-- 竞买记录 -->
+                        <h2 class="state">
+                            <span>状态</span>
+                            <span class="bid-number">竞拍人</span>
+                            <span class="offer-price">价格</span>
+                        </h2>
+                        <ul class="recordUl">
+                            <!-- <li class="hidden">没有更多出价记录...</li>
+                        <li class="leader">
+                            <p>
+                                <span class="record-icon"><s></s></span>
+                                <span>1,440,000 </span>
+                                <span class="nickname">H2446</span>
+                            </p>
+                            <em>2016年11月15日 10:14:01</em>
+                        </li>
+                        <li class="out">
+                            <p>
+                                <span class="record-icon"><s></s></span>
+                                <span>1,430,000 </span>
+                                <span class="nickname">E5592</span>
+                            </p>
+                            <em>2016年11月15日 10:13:07</em>
+                        </li>
+                        <li class="get">
+                            <p>
+                                <span class="record-icon"><s></s></span>
+                                <span>1,091,000 </span>
+                                <span class="nickname">Q1170</span>
+                            </p>
+                            <em>2016年11月15日 10:16:18</em>
+                        </li> -->
+                        </ul>
+                        <a href="#RecordContent" class="see-record" style="display: none">更多</a>
+                        <div class="scan-code">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAIAAABJgmMcAAACdUlEQVR42u3awXLDIAxFUf//T7urrtrJGN4VkZLLMo5jc+ioSOK6snH/jhef1N3199KLET79ocYlqKBDQO+VsTTJpflT60ot8KqGoIKOA8VjXziTvUkeiKqCCvrNoEuyS1PCd2aCCipoKWiITj1UUEEFLc2UlvIi6nfCL7dOPQUVFAWtq4dO/KR1gVlQQQPQukLD0l3UuoabJMBBUEGngeIRc68pUpdx7U354ZcFFbQ56IHIUne+4WTX8+FSCSroFNCwxxla4/Ga2lqtIggq6BRQ/OXCBOlArTOsxv57SVBBp4CeDFV12dTeRgr8RFBBm4NSrcS9CmkYH+sC7n6mJKigHwRKdUbrtk1hdM7TRUEFbQ4aVgkPYIX7nrAUAmRKggraEhTPHyjrurJLRX1WUEHngobvhB8jCH+HypSerqiggk4DDTsWddsUqoYbbr+Wu56CCtoAdC/SUalF3V11vyOooKNBqa0MFcXCS3iCtPoIQQVtDhpuL6hCJFW5wP8lrM5UUEGbg+LNfjwaUjH9QJwVVNBBoFTso2qm+Jmk8NJ+PVRQQaeBHuh61t1FlWYevoaggo4DrWt47JUd97DqjjTVtpEFFbQBKBVVDzwLPyex+vKCCjoXNO/6J2r4wlDTIc82CSroEFBqaxXWQ/d+56KHoIIOAr2hgZdL9qJqWEAJu7mCCtof9GSOQfVLKOJwQ/a0jSyooC1Bw4hZ1wel0pi65dxvIwsqaANQPPpQewsqrcKfLqiggt5vOoGEX1qN14IK+m2gePGUytzCUxoP/xoEFXQc6IHjQU3aqOHaCyroaFCqHhpmU1SC9K7XEFTQ5qC3Ax0/tdBueN9o+UsAAAAASUVORK5CYII="
+                                class="scan-code-img" alt="">
+                            <p>扫码用手机出价</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sf-wrap sf-wrap2 mt20">
+            <div class="bidding-process container">
+                <div class="auction-container">
+                    <a class="auction-process" href="/pages/helpcenter_index.html" target="_blank"></a>
+                    <div class="auction-step-container">
+                        <div class="auction-process-step">
+                            <!--<span class="auction-process-img img1"></span>-->
+                            <div><a href="/pages/helpcenter_buy.html#d4" target="_blank"><span class="num">1</span>拍前准备</a></div>
+                            <ul>
+                                <li><a href="pages/helpcenter_buy.html#d1" target="_blank">注册认证</a></li>
+                                <li><a href="/pages/helpcenter_problem.html#e9" target="_blank" class="active">阅读公告</a></li>
+                            </ul>
+                        </div>
+                        <div class="auction-process-step">
+                            <!--<span class="auction-process-img img2"></span>-->
+                            <div><a href="/pages/helpcenter_buy.html#d5" target="_blank"><span class="num">2</span>报名交保证金</a></div>
+                            <ul>
+                                <li><a href="/pages/helpcenter_problem.html#e1" target="_blank" class="active">如何交纳大额保证金</a></li>
+                                <li><a href="/pages/helpcenter_problem.html#e4" target="_blank">如何退回保证金</a></li>
+                            </ul>
+                        </div>
+                        <div class="auction-process-step">
+                            <!--<span class="auction-process-img img3"></span>-->
+                            <div><a href="/pages/helpcenter_buy.html#d6" target="_blank"><span class="num">3</span>出价竞拍</a></div>
+                            <ul>
+                                <li><a href="/pages/helpcenter_rule.html#b3" target="_blank">成交规则</a></li>
+                                <li><a href="/pages/helpcenter_rule.html#b4" target="_blank" class="active">出价规则</a></li>
+                            </ul>
+                        </div>
+                        <div class="auction-process-step">
+                            <!--<span class="auction-process-img img4"></span>-->
+                            <div><a href="/pages/helpcenter_buy.html#d7" target="_blank"><span class="num">4</span>竞拍成功</a></div>
+                            <ul>
+                                <li><a href="/pages/helpcenter_buy.html#d7" target="_blank">如何支付余款</a></li>
+                            </ul>
+                        </div>
+                        <div class="auction-process-step">
+                            <!--<span class="auction-process-img img5"></span>-->
+                            <div><a href="/pages/helpcenter_buy.html#d8" target="_blank"><span class="num">5</span>办理交割</a></div>
+                            <ul>
+                                <li><a href="/pages/helpcenter_problem.html#e8" target="_blank" class="active">办理过户</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="help-tip" href="/pages/helpcenter/helpcenter_index.html" target="_blank">更多帮助</a>
+                </div>
+            </div>
+            <div class="grid-c mt20">
+                <div class="module-sf" data-spm="tabs">
+                    <div class="pm-addition clearfix">
+                        <div class="wrap-line">
+                            <span class="line selected1" style="width: 154px;"></span>
+                        </div>
+                        <div class="detail-for-remind">
+                            <ul class="tab-menu ks-switchable-nav">
+
+                                <li class="current"><a href="#NoticeDetail">重要提示</a></li>
+                                <li><a href="#ItemNotice">竞买公告</a></li>
+                                <li><a href="#RemindTip">竞拍须知</a></li>
+                                <li><a href="#AuctIntroduce">标的介绍</a></li>
+                                <li><a href="#RecordContent">竞价记录</a></li>
+                                <li><a href="#AuctConfirmation">成交确认书</a></li>
+                            </ul>
+                        </div>
+                        <!-- 重要提示 -->
+                        <div id="DetailTabMain" class="detail-main">
+                            <div class="addition-desc">
+                                <div class="pai-title">
+                                    <div class="pai-title-text">重要提示</div>
+                                </div>
+                                <div class="pai-remind-tip">
+                                    <p>1.竞拍前请务必遵照《竞买公告》、《竞买须知》及《标的物情况介绍表》要求，进行实地看样、调查标的物信息（如过户要求、违章情况等）、了解竞买资质、委托代理及尾款支付方式等内容。 <b>如违反相关规定，您的保证金可能会被法院划扣并产生其他司法处罚等后果，请理性参拍！</b></p>
+                                    <p>2.竞买人如欲委托他人参拍的，请提前与法院确认是否可行并办理相应的委托手续，否则法院将视被委托人为实际竞买人并办理交割手续。 <b>因未办理委托手续导致的二次过户风险及因此产生的相关税费由竞买人自行承担。</b>
+                                    </p>
+                                    <p>3.<b><span style="background:#FBFCFC;">请仔细阅读标的物详情，再进行竞拍，包括房屋面积，周边配套，交通，学区等标的物详细情况，</span><span style="background:#FBFCFC;">以法院</span><span style="background:#FBFCFC;">实地告知</span><span style="background:#FBFCFC;">为准，</span><span style="background:#FBFCFC;">如有疑问请咨询法院。</span></b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tabDiv">
+                                <!-- 竞买公告 -->
+                                <div id="NoticeDetail" class="record-list">
+                                    <div class="pai-title">
+                                        <div class="pai-title-text">竞买公告</div>
+                                    </div>
+                                    <div class="detail-common-text">竞买公告加载中......</div>
+                                    <div class="detail-adjunct">
+                                        <h2 class="detail-common-head">相关附件</h2>
+                                        <ul id="J_DownLoadSecond">
+                                            附件加载中......
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 竞买须知 -->
+                                <div id="ItemNotice" class="record-list">
+                                    <div class="pai-title">
+                                        <div class="pai-title-text">竞买须知</div>
+                                    </div>
+                                    <div id="J_ItemNotice" class="detail-common-text">竞买须知加载中......</div>
+                                </div>
+                                <!-- 标的物介绍 -->
+                                <div id="RemindTip" class="addition-desc">
+                                    <div class="pai-title" id="RemindTip">
+                                        <div class="pai-title-text">标的介绍</div>
+                                    </div>
+                                    <h2 class="detail-common-head">具体描述</h2>
+                                    <div id="J_desc" class="detail-common-text clearfix">
+                                        <!-- 请致电0835-2855044咨询。 -->
+                                    </div>
+                                    <div class="auc-parameter">
+                                        <div class="paramter-tit">参数配置</div>
+                                        <table>
+                                            <tbody>
+                                                <tr class="group-tit">
+                                                    <td colspan="4"><span>基本信息</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>车主</span></td>
+                                                    <td class="bgColor car_owner"></td>
+                                                    <td><span>车牌号</span></td>
+                                                    <td class="bgColor car_number"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>品牌</span></td>
+                                                    <td class="bgColor car_brand"></td>
+                                                    <td><span>车型</span></td>
+                                                    <td class="bgColor car_type"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>排放标准</span></td>
+                                                    <td class="bgColor gear_type"></td>
+                                                    <td><span>档位类型</span></td>
+                                                    <td class="bgColor standardvm"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>排量</span></td>
+                                                    <td class="bgColor vent_mete"></td>
+                                                    <td><span>颜色</span></td>
+                                                    <td class="bgColor car_color"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>拍照日期</span></td>
+                                                    <td class="bgColor photo_time"></td>
+                                                    <td><span>行驶里程</span></td>
+                                                    <td class="bgColor run_kilometres"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>车辆状况</span></td>
+                                                    <td class="bgColor car_condition"></td>
+                                                    <td><span>车辆用途</span></td>
+                                                    <td class="bgColor use_condition"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>进口/国产</span></td>
+                                                    <td class="bgColor car_entrance"></td>
+                                                    <td><span></span></td>
+                                                    <td class="bgColor"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="video-img">
+                                        <div class="video_slide">
+                                            <div id="lotVideo">视频加载中。。。</div>
+                                        </div>
+                                        <div class="sf-pic-slide clearfix">
+                                            <!-- <div class="slide-bigpic"><img src="../images/p1.jpg"></div>
+                                        <div class="slide-bigpic"><img src="../images/p2.jpg"></div>
+                                        <div class="slide-bigpic"><img src="../images/p3.jpg"></div>
+                                        <div class="slide-bigpic"><img src="../images/p4.jpg"></div>
+                                        <div class="slide-bigpic"><img src="../images/p5.jpg"></div> -->
+                                        </div>
+                                    </div>
+                                    <h2 class="detail-common-head">所在地</h2>
+                                    <div class="detail-common-text" id="position">
+                                        <!-- 标的物所在地：四川 成都 武侯 -->
+                                    </div>
+                                </div>
+                                <!-- 竞买记录 -->
+                                <div id="RecordContent" class="introduce-bid" has-data="0">
+                                    <div class="pai-title">
+                                        <div class="pai-title-text">竞买记录</div>
+                                    </div>
+                                    <table class="record-table" id="J_RecordList">
+                                        <thead>
+                                            <tr>
+                                                <th>状态</th>
+                                                <th class="bid-number">应买号</th>
+                                                <th class="offer-price">价格</th>
+                                                <th class="price-time">时间</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <div class="page-wrap">
+                                    </div>
+                                </div>
+                                <!--竞价成功确认书-->
+                                <div id="AuctConfirmation" class="record-list AuctConfirmation">
+                                    <div class="pai-title">
+                                        <div class="pai-title-text">竞价成功确认书</div>
+                                    </div>
+                                    <!--<div id="" class="detail-common-text">本次为变卖，一人报名参与竞价即可成交。</div>-->
+                                    <div class="auction-confirmation-content">
+                                        <h2 class="confirmation-head">司法拍卖网络竞价成功确认书</h2>
+                                        <hr class="largeline">
+                                        <hr class="smalline">
+                                        <div class="auction-info">
+                                            <div class="detail-common-text">司法标的处置单位：<span class="courtName"></span></div>
+                                            <div class="detail-common-text">标的名称：<span class="lotName"><!-- 【第二次拍卖】佛山市南海区桂城街道南桂东路66号桂南名都国际605房 --></span></div>
+                                            <div class="detail-common-text">标的网拍链接：<span class="linkUrl"><!-- http://shskdhsdjsdk.html --></span></div>
+                                            <div class="detail-common-text">网拍公告时间：<span class="noticeTime"><!-- 2016/10/xx 16:00 --></span></div>
+                                            <div class="detail-common-text">网拍开始时间：<span class="startTime"><!-- 2016/10/xx 10:00 --></span></div>
+                                            <div class="detail-common-text">网拍结束时间：<span class="endTime"><!-- 2016/10/xx 10:00 --></span></div>
+                                        </div>
+                                        <div class="auction-end">
+                                            <h3>【网络拍卖竞价结果】</h3>
+                                            <div class="detail-common-text">用户姓名<span class="bargainUserName"><!-- xx --></span>通过竞买号<span class="nowPriceNum"><!-- xxxx --></span> 于
+                                                <span class="bargainYear"><!-- xxxx --></span>年<span class="bargainMonth"><!-- xxxx --></span>月<span class="bargainDay"><!-- xxxx --></span>日 在
+                                                <span class="courtName"><!-- xxxx --></span>于中国拍卖行业协会网络平台展开的“
+                                                <span class="lotName"><!-- 【第二次拍卖】佛山市南海区桂城街道南桂东路66号桂南名都国际605房 --></span>”司法拍卖项目公开竞价中,以最高价胜出。</div>
+                                            <div class="detail-common-text">该标的网络拍卖成交价格：<span class="bargainPrice"><!-- ¥24400 --></span><span class="bargainPriceL"><!-- （贰万肆仟肆拾元整） --></span></div>
+                                            <div class="detail-common-text slidelarge">在网络拍卖中竞买成功的用户，必须依照标的《竞买须知》、《竞买公告》要求，按时完成余款交付、办理相关手续。</div>
+                                            <div class="detail-common-text">标的最终成交以<span class="courtName"><!-- xx --></span>人民法院出具拍卖成交裁定为准。</div>
+                                        </div>
+                                        <div class="auction-end-time">
+                                            <div class="detail-common-text">网拍竞价结果确认时间：<span class="bargainTime"><!-- xxxx年xxxx月xxxx日 --></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚-->
+    <div class="sifa-foot J-sifa-foot">
+
+    </div>
+    <script src="/scripts/loading.js?|now|"></script>
+</body>
+
+</html>

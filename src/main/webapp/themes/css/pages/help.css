@@ -1,0 +1,341 @@
+.helpcenter {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    padding: 24px 0 20px 0;
+}
+
+.menu {
+    background: #ffffff;
+}
+
+.helpcenter-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+.helpcenter-container {
+    width: 1200px;
+}
+
+.helpcenter-left {
+    width: 219px;
+    float: left;
+    min-height: 500px;
+    /* background: #fff; */
+    /* border: 1px solid #e3e3e3; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.helpcenter-left dl.menu:first-child,
+.helpcenter-left dl.menu:first-child dt:first-child {
+    border-top-left-radius: 5px;
+}
+
+.helpcenter-left dl dd:first-child {
+    margin-top: 10px;
+}
+
+.helpcenter-left dl dd:last-child {
+    padding-bottom: 10px;
+}
+
+.helpcenter-left dl dt {
+    height: 40px;
+    background: #e9e9e9;
+    font-size: 15px;
+    line-height: 40px;
+    color: #333;
+    /* border-bottom: 1px solid #d7d7d7; */
+}
+
+.helpcenter-left dl.menu a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.helpcenter-left dl.menu dt a {
+    color: #555;
+}
+
+.helpcenter-left dl.menu dt span.arrow {
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin: 14px 21px 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    background: url(/themes/images/help-icon.png) no-repeat 0 bottom;
+}
+
+.helpcenter-left dl.menu dt span.arrow.add {
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin: 14px 21px 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    background: url(/themes/images/help-icon.png) no-repeat 0 0;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.f-w {
+    font-weight: bold;
+}
+
+.helpcenter-left dl.menu dd {
+    font-size: 12px;
+    color: #555;
+    line-height: 32px;
+    display: none;
+}
+
+.helpcenter-left dl.menu dd:nth-child(2) {
+    margin-top: 10px;
+}
+
+.helpcenter-left dl.menu dd a {
+    color: #333;
+    font-size: 12px;
+}
+
+.helpcenter-left ul {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px 12px;
+}
+
+.customer-tel {
+    margin-top: 10px;
+}
+
+.helpcenter-left ul li {
+    line-height: 40px;
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.helpcenter-left ul li:last-child {
+    border-bottom: none;
+}
+
+.helpcenter-left ul li a {
+    display: block;
+    color: #d91615;
+    font-weight: bold;
+}
+
+.helpcenter-left ul li a span {
+    display: inline-block;
+    color: #d91615;
+    font-weight: bold;
+    vertical-align: -3px;
+}
+
+.helpcenter-left ul li a:hover {
+    text-decoration: none;
+}
+
+.helpcenter-right {
+    float: right;
+    width: 968px;
+    min-height: 1875px;
+    height: auto;
+    background: #fff;
+    /* border: 1px solid #e3e3e3; */
+    margin-left: -1px;
+    padding-bottom: 30px;
+}
+
+.help-tit {
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #d6363b
+}
+
+.helpcenter-right-cont {
+    padding: 40px 30px 0;
+}
+
+.helpcenter-right-list {
+    margin-bottom: 30px;
+}
+
+.helpcenter-right-cont h2 {
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 20px;
+    position: relative;
+}
+
+.helpcenter-right-cont h2 span {
+    color: #d91615;
+    display: block;
+    height: 44px;
+    line-height: 36px;
+    font-size: 20px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #d6363b;
+}
+
+.helpcenter-right-cont h2 em.xian {
+    height: 36px;
+    background: url(/themes/images/xian.gif) repeat-x right center;
+    display: inline-block;
+    width: 75%;
+    float: right;
+    display: none;
+}
+
+.helpcenter-right-cont p {
+    line-height: 26px;
+    font-size: 14px;
+    color: #555;
+}
+
+.helpcenter-right-cont p em {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #8b8b8b;
+    border: 1px solid #595959;
+    color: #fff;
+    font-family: tahoma;
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.helpcenter-right-cont p a {
+    color: #666;
+    /* margin-left: 14px; */
+}
+
+.index-plain,
+.index-problem {
+    overflow: hidden;
+}
+
+.helpcenter-right-cont .index-plain a {
+    margin-left: 0;
+    width: 20%;
+    float: left;
+}
+
+.index-problem a {
+    width: 50%;
+    float: left;
+}
+
+.helpcenter-right-cont .index-plain .large-width {
+    width: 40%;
+}
+
+.helpcenter-right-cont p a:hover {
+    color: #d6363b;
+}
+
+.helpcenter-right-cont hr {
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 20px 0;
+}
+
+.helpcenter-right-cont h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    vertical-align: top;
+    display: table;
+}
+
+.helpcenter-right-cont h3 em {
+    font-style: italic;
+    color: #cd100b;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-right: 10px;
+    display: table-cell;
+}
+
+.helpcenter-right-cont p {
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+}
+
+.helpcenter-right-cont .text_p {
+    margin-left: 60px;
+}
+
+.helpcenter-right-cont .color-red {
+    color: #d6363b;
+}
+
+.helpcenter-right-cont p.title_p {
+    font-weight: bold;
+}
+
+.helpcenter-right-cont p.strong_p {
+    line-height: 26px;
+    font-size: 14px;
+    color: #E53333;
+    font-weight: bold;
+}
+
+.helpcenter-right-cont p .red {
+    font-weight: bold;
+}
+
+.helpcenter-right-cont p strong {
+    font-weight: bold;
+}
+
+.helpcenter-right-cont p em.yuanem {
+    margin-right: 3px;
+}
+
+.helpcenter-right-cont ul li a {
+    color: #2196f3;
+    font-size: 14px;
+}
+
+.helpcenter-right-cont ul li {
+    line-height: 30px;
+    float: left;
+    width: 33%;
+}
+
+img.help {
+    max-width: 770px;
+    margin-left: 100px;
+}
+
+.helpcenter-right-cont p .color-red {
+    color: #d6363b;
+}

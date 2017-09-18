@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>支付_中拍平台</title>
+    <meta name="keywords" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta name="description" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/css/comm/comm.css">
+    <link rel="stylesheet" href="/themes/css/pages/payment.css">
+</head>
+
+<body>
+    <div class="dialog prompt errorDiv" style="display: none;">
+        <div class="dialogBg">
+            <!--<h2><span class="close">×</span>提示</h2>-->
+            <p class="error_msg">出价小于当前最高价，请重新出价</p>
+            <div class="btn">
+                <input class="sureBtn close_tip" type="button" value="确定">
+            </div>
+        </div>
+    </div>
+    <div class="sifa-head">
+        <div class="container-fluid">
+            <div class="container-title J-container-title">
+                <div class="nologin-info">
+                    <a target="_blank" href="/index.html" class="float-left shop-test">进入测试版</a>
+                    <p>
+                        <a class="shop-official" href="/shop" target="_blank">拍卖企业后台</a>
+                        <a href="/pages/user/register.html">免费注册</a>
+                        <a href="/pages/user/login.html?redirect=http://zy.caa.test/index.html">登录</a>
+                    </p>
+                </div>
+            </div>
+            <div class="nav-con">
+                <div class="container">
+                    <a href="/index.html" class="head-img">
+                        <img src="/themes/images/headbanner.png" alt="司法拍卖" class="caa-logo">
+                    </a>
+                    <div class="nav-wrap clearfix">
+                        <ul class="main-nav">
+                            <li>
+                                <a class="nav-a text14-fff" href="/index.html">首页</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff nav-sifa" href="https://sf.caa123.org.cn" target="_blank">司法</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/lots/list.html">标的</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/meeting/list.html">拍卖会</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/notice/list.html">拍卖公告</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/enterprises/list.html">拍卖企业</a>
+                            </li>
+                            <!--<li>
+                                <a class="nav-a text14-fff" href="/pages/personal/home.html">我的竞拍</a>
+                            </li>-->
+                        </ul>
+                        <div class="nav-search">
+                            <div class="other-nav">
+                                <a href="/pages/personal/home.html" class="color-333">我的竞拍</a>
+                            </div>
+                            <form class="search-form" action="/pages/lots/list.html" type="get">
+                                <input type="text" name="name" placeholder="搜索标的" class="search-input search-lot">
+                                <button class="search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="submit-deposit">
+        <div class="container">
+            <div class="auction-current-info">
+                <div class="auction-money">保证金：<span class="deposit"></span></div>
+                <div class="main-intro">
+                    <input type="hidden" id="user_mobile" />
+                    <input type="hidden" id="idType" />
+                    <input type="hidden" id="noticeTitle" />
+                    <input type="hidden" id="goodsTitle" />
+                    <input type="hidden" id="price" />
+                    <input type="hidden" id="isCorp" />
+                    <input type="hidden" id="h_bidderName" />
+                    <input type="hidden" id="card-num" />
+                    <input type="hidden" id="fee" />
+                    <div class="bold-font">标的名称：<span class="goodsTitle_div"></span></div>
+                    <div class="bold-font">拍卖企业：<span class="fy_span"></span></div>
+                    <!--<div class="light-font">报名成功，请您尽快付款！ 否则<span>标的超时</span>会被自动取消</div>-->
+                </div>
+            </div>
+            <div class="support-bank">
+                <ul>
+                    <li class="active submit1">
+                        <input type="hidden" value="105">
+                    </li>
+                    <li class="submit2">
+                        <input type="hidden" value="104">
+                    </li>
+                    <li class="submit3">
+                        <input type="hidden" value="100">
+                    </li>
+                    <li class="submit4">
+                        <input type="hidden" value="102">
+                    </li>
+                    <li class="submit5">
+                        <input type="hidden" value="301">
+                    </li>
+                    <li class="submit6">
+                        <input type="hidden" value="302">
+                    </li>
+                    <li class="submit7">
+                        <input type="hidden" value="308">
+                    </li>
+                    <li class="submit8">
+                        <input type="hidden" value="306">
+                    </li>
+                    <!--<li class="submit9">
+                        <input type="hidden" value="202">
+                    </li>
+                    <li class="submit10">
+                        <input type="hidden" value="201">
+                    </li>-->
+                    <li class="submit11">
+                        <input type="hidden" value="305">
+                    </li>
+                    <li class="submit12">
+                        <input type="hidden" value="304">
+                    </li>
+                    <li class="submit13">
+                        <input type="hidden" value="303">
+                    </li>
+                    <li class="submit14">
+                        <input type="hidden" value="307">
+                    </li>
+                    <li class="submit15">
+                        <input type="hidden" value="309">
+                    </li>
+                    <li class="submit16">
+                        <input type="hidden" value="310">
+                    </li>
+                    <li class="submit17">
+                        <input type="hidden" value="403">
+                    </li>
+                    <!--<li class="submit18">
+                        <input type="hidden" value="311">
+                    </li>-->
+                    <li class="submit19">
+                        <input type="hidden" value="401">
+                    </li>
+                    <li class="submit20">
+                        <input type="hidden" value="103">
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="submit-money">立即支付</a>
+                <div class="light-font">报名成功，请您尽快付款！ 否则<span>标的超时</span>会被自动取消</div>
+            </div>
+        </div>
+        <div class="form_div">
+            <form action="" method="post" id="form_div">
+
+            </form>
+        </div>
+    </div>
+    <div class="sifa-foot J-sifa-foot">
+    </div>
+    <script src="/scripts/loading.js?|now|"></script>
+</body>
+
+</html>

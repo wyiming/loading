@@ -1,0 +1,326 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *+height: 1%;
+}
+
+.company_wrap {
+    background: #f3f5f7;
+    overflow: hidden;
+}
+
+.company_list {
+    width: 1250px;
+}
+
+
+/*.company_list.setheight {
+    max-height: 270px;
+    overflow: hidden;
+}*/
+
+.company_list li {
+    background: #fff;
+    width: 255px;
+    margin-right: 20px;
+    float: left;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.company_list li:hover .comname {
+    color: #d6363b;
+}
+
+.company_list li a {
+    display: block;
+}
+
+.company_list img {
+    float: left;
+    /* padding: 10px 0 0 10px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.company-province {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.txt_box {
+    /* float: left; */
+    padding-left: 70px;
+    /* padding-top: 10px; */
+}
+
+.ptit {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.ptxt {
+    /* font-size: 14px; */
+    color: #999;
+    margin-top: 10px;
+}
+
+a.c666 {
+    color: #666;
+}
+
+.c333 {
+    color: #333;
+}
+
+.company-letter-btn {
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 30px;
+    color: #D6363B;
+    background: #e5e5e5;
+    /* margin-bottom: 10px; */
+    width: 1170px;
+}
+
+.pt50 {
+    padding-top: 20px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.company-filter {
+    margin: 18px auto 20px;
+    height: 50px;
+    z-index: 999;
+    position: static;
+}
+
+.company-filter .index-title {
+    width: 205px;
+    height: 50px;
+    line-height: 50px;
+    /* border: 1px solid #ededed; */
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    color: #999;
+    font-weight: 700;
+    border-right: none;
+    /* margin-left: 18px; */
+}
+
+.company-filter .index-letter {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 205px;
+    /* border: 1px solid #ededed; */
+    background-color: #ffffff;
+}
+
+.company-filter .index-letter li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    /* margin-right: 15px; */
+    text-align: center;
+}
+
+.company-filter .index-letter li a {
+    width: 35px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    /* border-right: 1px solid #ededed; */
+}
+
+.company-filter .index-letter li a.active {
+    background-color: #d6363b;
+    color: #fff;
+    border-radius: 50%;
+    border-right-width: 0;
+}
+
+.company-filter .index-letter li a.last-z {
+    border-right: 0;
+}
+
+.company_nav {
+    padding-left: 40px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.company_nav p {
+    line-height: 50px;
+    font-size: 16px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.company_nav .current {
+    color: #d6363b;
+    border-bottom: 1px solid #d6363b;
+    display: inline-block;
+}
+
+.company_nav p span:last-child {
+    font-size: 14px;
+}
+
+.p_r {
+    position: relative;
+}
+
+.boxleft {
+    width: 400px;
+    text-align: center;
+}
+
+.boxleft p {
+    font-size: 12px;
+    padding-bottom: 10px;
+    /* margin-right: 15px; */
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.boxleft p.f20 {
+    font-size: 20px;
+    padding: 10px 0 15px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.companylogo {
+    background: #ffffff;
+    padding-bottom: 5px;
+}
+
+.boxleft:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 70%;
+    top: 15%;
+    border-right: 1px solid #d7d7d7;
+}
+
+.boxright {
+    width: 640px;
+    padding: 40px 80px 0;
+}
+
+.company_txt {
+    font-size: 12px;
+}
+
+.company_txt p {
+    width: 33%;
+    text-align: center;
+    color: #666666;
+}
+
+.company_txt p span {
+    font-size: 22px;
+    color: #333333;
+}
+
+.f12 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+ul:after {
+    content: none;
+}
+
+.notice-wrap {
+    display: none;
+}
+
+.company-filter.fixed {
+    position: fixed;
+    top: -18px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.company-letter-btn.fixed2 {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.company_auctionmeeting_list img {
+    /* background: none; */
+}
+
+.company-content {
+    padding-bottom: 30px;
+}
+
+.company-province .see-more {
+    float: right;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.company-meetlist {
+    margin-top: 20px;
+}
+
+.no-company {
+    display: none;
+}

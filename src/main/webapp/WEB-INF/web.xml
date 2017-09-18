@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<!-- 
+<web-app  
+        version="3.0"  
+        xmlns="http://java.sun.com/xml/ns/javaee"  
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+-->
+<display-name>ProxyWeb</display-name>
+<description>ProxyWeb</description>
+
+<context-param>
+	<param-name>webAppRootKey</param-name>
+	<param-value>rest.root</param-value>
+</context-param>
+
+<welcome-file-list>
+	<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+<error-page>
+	<exception-type>org.apache.shiro.authz.UnauthenticatedException</exception-type>
+	<location>/WEB-INF/jsp/loginException.jsp</location>
+</error-page>
+<error-page>
+	<exception-type>java.lang.Exception</exception-type>
+	<!-- Displays a stack trace -->
+	<location>/WEB-INF/jsp/uncaughtException.jsp</location>
+</error-page>
+
+<resource-ref>
+	<res-ref-name>jdbc/applicationDS</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+</resource-ref>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+</web-app>	

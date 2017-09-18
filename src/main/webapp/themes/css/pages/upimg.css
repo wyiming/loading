@@ -1,0 +1,535 @@
+.ace-file-input {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+
+.ace-file-input input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.ace-file-input label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.06);
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    padding-right: 53px;
+}
+
+.ace-file-input label:before {
+    /* the button */
+    display: inline-block;
+    content: attr(data-title);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 0 8px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid #FFF;
+    border-left-width: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ace-file-input label span {
+    /* the file name container */
+    display: inline-block;
+    height: 28px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 26px;
+    color: #888888;
+    font-size: 13px;
+    position: static;
+    vertical-align: middle;
+}
+
+.ace-file-input label span:after {
+    /* the file name */
+    display: inline-block;
+    display: inline\0;
+    content: attr(data-title);
+}
+
+.ace-file-input label [class*="icon-"] {
+    display: inline-block;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 13px;
+    line-height: 22px;
+    width: 22px;
+    border: 2px solid #FFF;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.ace-file-input label.hide-placeholder:before {
+    display: none;
+}
+
+.ace-file-input a:hover {
+    text-decoration: none;
+}
+
+.ace-file-input .remove {
+    display: none;
+    position: absolute;
+    right: 47px;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 15px;
+    font-size: 11px;
+    font-weight: normal;
+    border-radius: 24px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.ace-file-input .remove [class*="icon-"] {
+    border: 0px;
+    width: auto;
+    height: auto;
+    position: static;
+    line-height: 15px;
+    margin-right: 0px;
+}
+
+.ace-file-input label.selected {
+    padding-right: 68px;
+}
+
+.ace-file-input label.selected .remove {
+    display: inline-block;
+    background: url(/themes/images/delfile.png) no-repeat 0px 0px;
+}
+
+.ace-file-input label.selected .remove [class*="icon-"] {
+    background: none;
+}
+
+.ace-file-input input[type=file].disabled+label,
+.ace-file-input input[type=file][disabled]+label,
+.ace-file-input input[type=file][readonly]+label {
+    cursor: default;
+}
+
+.ace-file-input input[type=file][readonly]+label {
+    cursor: default;
+}
+
+.ui-file-pic,
+.ui-form .ui-file {
+    margin: 4px 18px 0px 0;
+    *margin: 0px 18px 0px 0px;
+    margin: 0px 18px 0px 0px\0;
+}
+
+.ui-file-pic .grid-row-fluid {
+    margin-bottom: 0px;
+}
+
+.ui-file-pic .ui-file {
+    margin: 0px;
+}
+
+.ui-file-pic label {
+    margin-bottom: 0px;
+}
+
+.ui-file-pic p {
+    margin: 10px 0px 0px 0px;
+}
+
+.ui-file-pic p.ui-note {
+    line-height: 14px;
+}
+
+.ui-file-pic .ui-tips {
+    margin-top: 20px;
+}
+
+.ui-file-pic .ui-tips .icon-info-sign {
+    color: #626c75;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.ui-file-pic .pic-show {
+    margin-top: 10px;
+}
+
+.pic-show .pic-box:after,
+.pic-show:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+}
+
+.pic-show .pic-box,
+.pic-show li {
+    width: 100%;
+    position: relative;
+}
+
+.pic-show li {
+    float: left;
+    width: auto;
+}
+
+.pic-show .ui-note {
+    font-size: 11px;
+}
+
+.pic-show .pic-box {
+    margin-bottom: 10px;
+}
+
+.pic-show li>div {
+    float: left;
+    display: inline;
+    margin-right: 12px;
+    text-align: center;
+}
+
+.pic-show .pic-content {
+    border: 1px #c7cbd6 solid;
+    float: left;
+}
+
+.pic-show .large-pic .pic-vc {
+    width: 140px;
+    height: 140px;
+    *font-size: 122px;
+}
+
+.pic-show .small-pic .pic-vc {
+    width: 70px;
+    height: 70px;
+    *font-size: 61px;
+    vertical-align: middle;
+}
+
+.pic-show .large-pic img {
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.pic-show .small-pic img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.pic-show .icon-remove {
+    border: 1px #7f869d solid;
+    font-size: 14px;
+    float: left;
+    padding: 1px 2px;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.pic-show .del-btn {
+    background: transparent url("images/ui_dialog_closeBg.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin: 0 0 0 -16px;
+}
+
+.pic-show .del-btn:hover {
+    background-position: 0px -41px;
+}
+
+.jcrop_container {
+    background-color: #f7f7f7;
+    padding: 3px;
+    width: 430px;
+    float: left;
+}
+
+.jcrop_container img {
+    max-width: none;
+}
+
+.jcrop_container .jcrop_big {
+    float: left;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.jcrop_container .jcrop_small {
+    float: left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.ui-file-multiple {
+    margin-bottom: -5px;
+}
+
+.ui-file-multiple form {
+    float: left;
+    display: inline;
+    width: 100px;
+    margin: 5px 16px 5px 0px;
+}
+
+.ace-file-multiple {
+    height: 100px;
+    line-height: normal;
+}
+
+.ace-file-multiple input {
+    width: 98px;
+}
+
+.ace-file-multiple label {
+    border-style: dashed;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    position: relative;
+    height: 98px;
+    width: 98px;
+    margin: 0px;
+    padding-right: 0px;
+}
+
+.ace-file-multiple label:before {
+    display: block;
+    content: attr(data-title);
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 0px 5px 0px;
+    position: relative;
+    right: 0px;
+    left: 0;
+}
+
+.ace-file-multiple label.selected {
+    padding-right: 0px;
+}
+
+.ace-file-multiple label span {
+    font-size: 12px;
+    display: block;
+    height: 98px;
+    width: 98px;
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+.ace-file-multiple label span img {
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ace-file-multiple label span:after {
+    display: none;
+}
+
+.ace-file-multiple label.selected span:after {
+    background-color: #555;
+    color: #FFF;
+    display: inline-block;
+    line-height: 16px;
+    white-space: pre;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.ace-file-multiple label span img+[class*="icon-"],
+.ace-file-multiple label.selected span img+[class*="icon-"] {
+    display: none;
+}
+
+.ace-file-multiple .remove {
+    right: -9px;
+    top: -14px;
+    z-index: 10;
+}
+
+.ace-file-multiple label.selected+.remove {
+    display: inline-block;
+}
+
+.ace-file-multiple label.selected+.remove:hover {
+    border-color: #f4c0b1;
+}
+
+.ace-file-multiple label span [class*="icon-"] {
+    display: block;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    line-height: 40px;
+    *line-height: 40px;
+    color: #D5D5D5;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    border: 1px dashed #cecece;
+    border-radius: 3px;
+}
+
+.ace-file-multiple label.selected span [class*="icon-"] {
+    display: block;
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 55px;
+    width: 94px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.ace-file-multiple input[type=file].disabled+label:hover,
+.ace-file-multiple input[type=file][disabled]+label:hover,
+.ace-file-multiple input[type=file][readonly]+label:hover {
+    border-color: #AAA;
+}
+
+.ace-file-multiple input[type=file].disabled+label:before,
+.ace-file-multiple input[type=file][disabled]+label:before,
+.ace-file-multiple input[type=file][readonly]+label:before {
+    background-color: transparent;
+}
+
+.ace-file-multiple input[type=file].disabled+label [class*="icon-"],
+.ace-file-multiple input[type=file][disabled]+label [class*="icon-"],
+.ace-file-multiple input[type=file][readonly]+label [class*="icon-"] {
+    border-color: #EEE;
+}
+
+.ace-file-multiple .loading-part {
+    background-image: url('images/loading-part-bg2.png');
+    width: 87px;
+    height: 15px;
+    top: 35px;
+    *top: 40px;
+}
+
+.ace-file-multiple .loading-part .loading {
+    background-image: url('images/loading-part2.gif');
+    display: inline-block;
+    width: 79px;
+    height: 7px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.ace-file-multiple .loading-part .loading {
+    *display: inline;
+}
+
+.ace-file-multiple label span [class*="icon-"] {
+    line-height: 40px;
+}
+
+.ace-file-multiple input {
+    width: 278px;
+}
+
+.ace-file-multiple {
+    height: 278px;
+}
+
+.ui-file-multiple form {
+    width: 288px;
+}
+
+.ace-file-multiple label {
+    width: 278px;
+    height: 185px;
+}
+
+.ace-file-multiple label span {
+    width: 238px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.ace-file-multiple label em.img-star {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    z-index: 99;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('/extra/font/iconfont.eot');
+    /* IE9*/
+    src: url('/extra/font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/extra/font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('/extra/font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('/extra/font/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.img-star {
+    color: #808080;
+    cursor: pointer;
+}
+
+.img-star:hover {
+    color: #FFAF6B;
+}
+
+.img-star.main {
+    color: #FFAF6B;
+}
+
+.img-star-font {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}

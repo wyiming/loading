@@ -1,0 +1,659 @@
+.auction-filter {
+    margin-top: 20px;
+}
+
+.auction-filter-line {
+    border-bottom: 1px solid #d6d6d6;
+    position: relative;
+    background: #ffffff;
+}
+
+.auction-filter-line .auction-filter-key {
+    float: left;
+    width: 120px;
+    color: #999;
+    line-height: 40px;
+    text-align: center;
+    background-color: #eeeeee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.auction-filter-value {
+    margin-left: 120px;
+    /* padding: 6px 0; */
+}
+
+.value-no-limited {
+    float: left;
+    width: 90px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.auction-filter-line .value-no-limited a {
+    padding-right: 3px;
+    padding-left: 0;
+    color: #656565;
+}
+
+.auction-way .value-limited a span,
+.auction-status .value-limited a span {
+    margin-right: 30px;
+}
+
+.value-no-limited a.active span {
+    color: #e11a1a!important;
+}
+
+.value-no-limited.active span {
+    color: #e11a1a!important;
+}
+
+.value-limited {
+    padding-left: 90px;
+}
+
+.auction-court .value-limited li {
+    width: 90px;
+}
+
+.auction-type .value-limited li {
+    width: 120px;
+}
+
+.auction-locus .value-limited li {
+    width: 140px;
+}
+
+.value-limited li {
+    display: inline-block;
+    margin: 0 -3px;
+    position: relative;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.value-limited li a {
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 6px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    _border-color: tomato;
+    _filter: chroma(color=tomato);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: #656565;
+    text-decoration: none;
+}
+
+.value-limited li a:hover {
+    color: #cd0000;
+}
+
+.value-limited li a i {
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    margin-left: 5px;
+    background: url("/themes/images/icon.png") no-repeat 0 -106px;
+}
+
+.value-limited li.active a i {
+    background-position: 0px -109px;
+}
+
+.value-limited li a.no-allowed,
+.value-limited li a.no-allowed:hover {
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+.value-limited a.active span {
+    color: #e11a1a!important;
+}
+
+.value-limited li.active .limited-value-list span {
+    color: #e11a1a!important;
+}
+
+.sub-value {
+    margin-left: 0;
+    background-color: #f6f6f6;
+    /* padding: 8px; */
+    width: 928px;
+    position: relative;
+    top: -1px;
+    display: none;
+}
+
+.auction-locus .value-limited li.active .sub-value,
+.auction-court .value-limited li.active .sub-value,
+.auction-type .value-limited li.active .sub-value {
+    display: block;
+}
+
+.sub-value .value-no-limited {
+    margin-top: 0;
+    width: 50px;
+    padding-right: 15px;
+}
+
+.sub-value li a {
+    border: 0;
+}
+
+.sub-value .value-limited {
+    padding-left: 50px;
+}
+
+.auction-locus li.active .limited-value-list,
+.auction-court li.active .limited-value-list,
+.auction-type li.active .limited-value-list {
+    background: #f6f6f6;
+    border-bottom: none;
+}
+
+.sub-value .value-limited li {
+    padding-right: 15px;
+    width: auto;
+}
+
+.auction-status {
+    /* border-bottom: 0; */
+}
+
+.filter-end-show .filter-fixed {
+    margin-top: 20px;
+}
+
+.filter-end-show .filter-fixed {
+    margin: 20px 0 0;
+    background-color: #eeeeee;
+    z-index: 10;
+}
+
+.filter-end-show .filter-fixed li {
+    color: #666;
+    float: left;
+    min-width: 125px;
+    height: 26px;
+    position: relative;
+    line-height: 26px;
+    padding: 7px 15px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.filter-end-show .filter-fixed .count {
+    color: #d91615;
+}
+
+.filter-end-show .filter-fixed li .chose {
+    width: 130px;
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    z-index: 12;
+}
+
+.filter-end-show .filter-fixed li .chose i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -1px;
+    width: 7px;
+    height: 4px;
+    background: url("/themes/images/icon.png") no-repeat 0 -106px;
+    text-indent: -999em;
+}
+
+.filter-end-show .filter-fixed li .chose-stage {
+    width: 160px;
+}
+
+.price-input {
+    position: relative;
+    width: 190px;
+}
+
+.price-input-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    padding: 7px 15px;
+}
+
+.price-input.hover .price-input-wrap {
+    background: #fff;
+    margin: -1px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+    width: 256px;
+    z-index: 9;
+}
+
+.provide-money a,
+.filter-selecct.chose-num a {
+    display: inline-block;
+    color: #666;
+    margin-right: 10px;
+}
+
+.provide-money a span,
+.filter-selecct.chose-num a span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url("/themes/images/icon.png") no-repeat -71px -100px;
+}
+
+.provide-money a span.input-is-checked,
+.filter-selecct.chose-num a span.input-is-checked {
+    background-position: -56px -100px;
+}
+
+.price-input input[type=text] {
+    color: #666;
+    padding: 3px 0 3px 5px;
+    margin: 0 2px;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+.price-input input[type=submit] {
+    width: 40px;
+    color: #666;
+    height: 24px;
+    margin-left: 2px;
+    line-height: 24px;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    background-color: #f6f6f6;
+    box-sizing: content-box;
+    vertical-align: middle;
+    display: none;
+}
+
+.price-input.hover input[type=submit] {
+    display: inline-block;
+}
+
+.price-input span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content-gap {
+    width: 200px;
+}
+
+.content-sort a {
+    display: inline-block;
+    color: #666;
+    margin-right: 10px;
+}
+
+.content-sort a.active {
+    color: #d91615;
+}
+
+.content-sort .arrow-toggle span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url("/themes/images/icon.png") no-repeat 0 0;
+    vertical-align: -3px;
+    margin-left: 3px;
+}
+
+.content-sort .arrow-toggle .arrow-down {
+    background-position: -122px -81px;
+}
+
+.content-sort .arrow-toggle:hover .arrow-down,
+.content-sort .arrow-toggle.active .arrow-down {
+    background-position: -122px -93px;
+}
+
+.content-sort .arrow-toggle .arrow-up {
+    background-position: -134px -81px;
+}
+
+.content-sort .arrow-toggle:hover .arrow-up,
+.content-sort .arrow-toggle.active .arrow-up {
+    background-position: -134px -93px;
+}
+
+.content-sort .arrow-toggle:hover {
+    color: #ff0000;
+}
+
+.filter-end-show .filter-fixed .content-sort {
+    border-right: 0;
+    float: right;
+    border-left: 1px solid #dbdbdb;
+}
+
+.court-filter {
+    margin: 18px auto 20px;
+    height: 50px;
+    z-index: 999;
+    position: static;
+}
+
+.court-filter .index-title {
+    width: 205px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    color: #999;
+    font-weight: 700;
+    border-right: none;
+}
+
+.court-filter .index-letter {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 205px;
+    background-color: #ffffff;
+}
+
+.court-filter .index-letter li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.court-filter .index-letter li a {
+    width: 35px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.court-filter .index-letter li a.active {
+    background-color: #d6363b;
+    color: #fff;
+    border-radius: 50%;
+    border-right-width: 0;
+}
+
+.court-filter .index-letter li a.last-z {
+    border-right: 0;
+}
+
+.court-content ul {
+    border-bottom: none;
+}
+
+.court-content ul li {
+    position: relative;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 14px;
+    background: #ffffff;
+}
+
+.court-content {
+    margin-bottom: 40px;
+    min-height: 400px;
+}
+
+.notice-detail-wrap {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.court-content ul li:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.court-content .letter-btn {
+    color: #d5d5d5;
+    background-color: #eeeeee;
+    width: 1200px;
+    line-height: 30px;
+}
+
+.court-content .letter-btn.active span {
+    color: #d6363b;
+}
+
+.court-content .letter-btn span {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 600;
+    color: #c93e45;
+    height: 30px;
+    margin-left: 18px;
+}
+
+.court-province-wrap {
+    overflow: hidden;
+    border-top: 1px solid #d7d7d7;
+}
+
+.court-province-wrap:first-child {
+    border-top: 0;
+}
+
+.court-province-wrap .court-province {
+    font-size: 24px;
+    color: #333;
+    font-family: Microsoft YaHei, SimSun;
+    margin: 20px 0 16px 30px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.court-province-wrap .court-province a {
+    color: #333;
+}
+
+.court-province-wrap .court-province a:hover {
+    color: #d6363b;
+}
+
+.court-province-wrap .court-citys {
+    margin-bottom: 16px;
+    width: 1200px;
+}
+
+.court-province-wrap .court-citys .court-city {
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.court-city .court-city-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    float: left;
+    width: 212px;
+    height: 24px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.court-city .court-city-countys {
+    float: left;
+    width: 935px;
+}
+
+.court-city-countys .court-county {
+    width: 212px;
+    padding-right: 20px;
+    text-align: left;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.court-city-countys .court-county a {
+    color: #333;
+}
+
+.court-city-countys .court-county a:hover {
+    color: #d6363b;
+}
+
+.court-city-countys .large-county {
+    width: 100%;
+}
+
+.court-city-countys .court-county span {
+    color: #999;
+    margin-left: 3px;
+}
+
+.filter-fixed .filter-selecct {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    padding: 8px;
+    background-color: #f6f6f6;
+    border: 1px solid #dedede;
+    z-index: 11;
+    color: #666;
+    display: none;
+}
+
+.filter-fixed .filter-selecct.chose-num {
+    width: 350px;
+}
+
+.filter-fixed .court-select {
+    width: 662px;
+}
+
+.filter-fixed-show>li.active .filter-selecct {
+    display: block;
+}
+
+.filter-end-show .filter-fixed-show>li.active .chose i {
+    margin-top: -2px;
+    background-position: 0 0;
+}
+
+.filter-fixed .court-list-wrap {
+    margin-top: 5px;
+    background-color: #f6f6f6;
+    border: 1px solid #dedede;
+    z-index: 11;
+    color: #666;
+    height: 190px;
+    overflow: auto;
+}
+
+.filter-fixed .court-list {
+    padding: 13px 0 3px 18px;
+    background-color: #fff;
+}
+
+.provice-court {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #cbcbcb;
+    padding: 3px 0;
+}
+
+.filter-fixed .court-list ul li {
+    float: left;
+    width: 198px;
+    margin-bottom: 10px;
+    margin-right: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0;
+    border-right: 0;
+    height: 18px;
+    line-height: 18px;
+}
+
+.sf-empty {
+    margin: 200px auto;
+    text-align: center;
+}
+
+.sf-empty p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.value-limited .time-warp {
+    position: relative;
+    /* height: 200px; */
+    width: 760px;
+    /* height: 200px; */
+    margin-right: 0;
+}
+
+.value-limited li .time-btn {
+    width: 48px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 7px;
+    background: #d7d7d7;
+    color: #ffffff;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 20px;
+    display: none;
+}
+
+.value-limited li .time-btn.active {
+    background: #d6363b;
+}
+
+.value-limited li .time-btn:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.auction-time li {
+    margin-right: 15px;
+}
+
+.error {
+    line-height: 40px;
+    color: #d6363b;
+    margin-left: 10px;
+}

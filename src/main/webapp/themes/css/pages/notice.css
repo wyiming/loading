@@ -1,0 +1,123 @@
+.notice-detail-head {
+    padding: 20px 0;
+    color: #999;
+}
+
+.notice-detail-head a {
+    background: url("/themes/images/icon.png") no-repeat right -289px;
+    padding: 0 14px 0 0;
+    margin-right: 9px;
+    color: #666666;
+}
+
+.notice-detail-head a:hover {
+    color: #d6363b;
+}
+
+.notice-detail-content {
+    color: #333;
+}
+
+.notice-detail-line {
+    position: relative;
+    min-height: 60px;
+}
+
+.notice-detail-key {
+    font-size: 14px;
+    width: 130px;
+    text-align: center;
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-right: 1px solid #e2e2e2;
+    display: none;
+}
+
+.notice-detail-key-name {
+    margin: 20px;
+}
+
+.notice-detail-value {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.bg-value {
+    background: #fff;
+}
+
+.notice-detail-value {
+    padding: 30px;
+}
+
+.notice-detail-value .textAlign {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333333;
+}
+
+.notice-detail-value .textAlign h1 {
+    font-size: 24px;
+    color: #262626;
+    text-align: center;
+}
+
+.notice-detail-value .textAlign h3 {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.notice-detail-wrap .backnotice {
+    background: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: -18px;
+    bottom: -40px;
+    display: none;
+}
+
+.title,
+.notice-detail-title,
+.annexeList h3 {
+    font-size: 24px;
+    color: #262626;
+    padding: 40px 0 20px;
+}
+
+.annexeList {
+    display: none;
+}
+
+.other-info {
+    padding-bottom: 20px;
+}
+
+.other-info li {
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.other-info label {
+    float: left;
+}
+
+.other-info p {
+    margin-left: 90px;
+    color: #999;
+}
+
+.textAlign p {
+    height: auto!important;
+}

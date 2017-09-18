@@ -1,0 +1,60 @@
+body {
+    background: #fff;
+    padding-top: 200px;
+}
+
+.float-left {
+    width: 50%;
+    text-align: right;
+}
+
+.float-left img {
+    width: 315px;
+    margin-right: 80px;
+}
+
+.au-info {
+    color: #333;
+    margin-left: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 57px 0 22px;
+}
+
+p {
+    font-size: 16px;
+    color: #999;
+    padding-bottom: 7px;
+}
+
+li {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+li span {
+    color: #999;
+}
+
+a {
+    width: 163px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    background: #d6363b;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #fff;
+}
+
+ul:after {
+    content: none;
+}

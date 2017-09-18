@@ -1,0 +1,118 @@
+.notice-term {
+    /* margin-bottom: 20px; */
+    width: 1220px;
+}
+
+.notice-term li {
+    padding: 10px;
+    margin-top: 20px;
+    float: left;
+    width: 570px;
+    height: 160px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    position: relative;
+}
+
+.notice-left-img {
+    float: left;
+    width: 240px;
+    text-align: center;
+    max-height: 160px;
+    line-height: 160px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 160px;
+}
+
+.notice-left-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.notice-term li .notice-content {
+    float: left;
+    width: 280px;
+    text-align: left;
+}
+
+.notice-term li:hover {
+    border-color: #d91615;
+}
+
+.notice-term li .notice-content h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.notice-term li .notice-content h2:hover {
+    color: #d6363b;
+}
+
+.notice-term li.is-cancel .notice-content h2,
+.notice-term li.is-cancel .notice-content h2:hover {
+    color: #999;
+    font-weight: 700;
+}
+
+.notice-term li .notice-content .item-descript {
+    max-height: 72px;
+    color: #999;
+    overflow: hidden;
+    height: 57px;
+    line-height: 18px;
+    margin-bottom: 32px;
+}
+
+.notice-term li .notice-content .item-descript .descript-detail {
+    color: #999;
+}
+
+.notice-term li .notice-content .item-descript .descript-detail:hover {
+    color: #d6363b;
+}
+
+.notice-term li.is-cancel .notice-content .item-descript .descript-detail {
+    color: #999;
+}
+
+.notice-content .item-author {
+    line-height: 14px;
+    position: absolute;
+    left: 270px;
+    right: 15px;
+    color: #999;
+    bottom: 13px;
+}
+
+.notice-content .item-author .company {
+    color: #999;
+    display: inline-block;
+    width: 214px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: text;
+    vertical-align: -2px;
+}
+
+.is-cancel .notice-content .item-author a {
+    color: #999;
+}
+
+.notice-content .item-author .line {
+    width: 1px;
+    height: 13px;
+    background-color: #e2e2e2;
+    margin: 0 12px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+}
+
+.notice-term li .notice-content h2 a:hover {
+    color: #d6363b;
+}

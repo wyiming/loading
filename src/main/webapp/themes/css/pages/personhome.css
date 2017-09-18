@@ -1,0 +1,1847 @@
+input.disabled {
+    background: #ebebe4;
+}
+
+.sifa-content {
+    width: 100%;
+    height: auto;
+    background: #f4f5f5;
+}
+
+.sifa-content-div {
+    width: 100%;
+    height: auto;
+}
+
+.sifa-cont {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sifa-cont ul {
+    width: 180px;
+    float: left;
+    background: #ffffff;
+}
+
+.sifa-cont ul li {
+    color: #333;
+    font-size: 16px;
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    border-left: 2px solid transparent;
+}
+
+.icon-title {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/themes/images/my-hint.png") -75px -58px no-repeat;
+    margin-right: 10px;
+}
+
+.icon-title2 {
+    background: url("/themes/images/my-hint.png") -75px -105px no-repeat;
+}
+
+.icon-title3 {
+    background: url("/themes/images/my-hint.png") -75px -150px no-repeat;
+}
+
+.icon-title4 {
+    background: url("/themes/images/password.png") center center no-repeat;
+}
+
+.icon-title5 {
+    background: url("/themes/images/my-hint.png") -75px -241px no-repeat;
+}
+
+.sifa-cont ul li.active {
+    color: #d6363b;
+    border-left: 2px solid #d6363b;
+}
+
+.sifa-cont ul li.active .icon-title1 {
+    color: #d6363b;
+    background: url("/themes/images/my-hint.png") -129px -58px no-repeat;
+}
+
+.sifa-cont ul li.active .icon-title2 {
+    color: #d6363b;
+    background: url("/themes/images/my-hint.png") -129px -105px no-repeat;
+}
+
+.sifa-cont ul li.active .icon-title3 {
+    color: #d6363b;
+    background: url("/themes/images/my-hint.png") -129px -150px no-repeat;
+}
+
+.sifa-cont ul li.active .icon-title4 {
+    color: #d6363b;
+    background: url("/themes/images/password_red.png") center center no-repeat;
+}
+
+.sifa-cont ul li.active .icon-title5 {
+    color: #d6363b;
+    background: url("/themes/images/my-hint.png") -129px -241px no-repeat;
+}
+
+.my-auction-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px
+}
+
+.sifa-cont-right {
+    width: 1000px;
+    float: left;
+    min-height: 500px;
+    margin-left: 20px;
+    margin-top: -35px;
+}
+
+.sifa-cont .my-auction {
+    width: 160px;
+    height: 36px;
+    padding-left: 20px;
+    font-size: 16px;
+    background: #e9e9e9;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.personbox {
+    margin: 0 0 40px 0;
+    display: none;
+}
+
+.picerror-msg {
+    color: #d6363b;
+    margin-left: 23px;
+    display: none;
+}
+
+.personbox h2 .tips {
+    float: right;
+    color: #d6363b;
+    margin-right: 18px;
+    font-size: 12px;
+}
+
+#userreal .uploadmind {
+    padding-left: 24px;
+    float: none;
+}
+
+.uploadmind {
+    float: left;
+    /* margin-top: 13px; */
+}
+
+.uploadmind div {
+    float: left;
+    width: 246px;
+    margin-right: 47px;
+}
+
+.picexample {
+    clear: both;
+    font-size: 14px;
+    padding-left: 70px;
+}
+
+.picexample div {
+    float: left;
+    width: 275px;
+    margin-right: 30px;
+    margin-left: -6px;
+}
+
+.upimgwrapType form {
+    float: left;
+}
+
+.personbox h2 {
+    height: 38px;
+    line-height: 38px;
+    background: #e9e9e9;
+    color: #666;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.personbox h2 a {
+    float: right;
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.personbox h2 .revise {
+    background: url(/themes/images/icon.png) no-repeat -139px -1px;
+}
+
+.personbox h2 .add {
+    background: url(/themes/images/icon.png) no-repeat -114px -1px;
+}
+
+.personnew,
+.noDiv {
+    padding: 20px 0;
+    background: #fff;
+    min-height: 500px;
+    height: auto;
+}
+
+.my_news .personnew {
+    padding: 30px 0;
+}
+
+#userreal,
+#userreal2 {
+    padding-top: 20px;
+}
+
+.sifa-cont ul.newsul {
+    width: 997px;
+    margin: 0 auto;
+    height: auto;
+    clear: both;
+    float: inherit;
+}
+
+.sifa-cont ul.newsul li {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    background: #fff;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 17px 0 10px 20px;
+    margin: 10px 20px;
+    border: 1px solid #d7d7d7;
+}
+
+.itemtitle {
+    font: 14px/16px;
+    color: #333;
+    padding-bottom: 14px;
+    padding-right: 20px;
+}
+
+.sifa-cont ul.newsul li .itemsendtime {
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+
+.itemcontent {
+    padding-right: 20px;
+    font: 12px/16px;
+    color: #999;
+    word-wrap: break-word;
+}
+
+.sifa-cont ul.newsul li span {
+    font-size: 14px;
+    color: #333;
+}
+
+.sifa-cont ul.newsul li em {
+    font-style: normal;
+    color: #c63239;
+}
+
+.personnew_center {
+    float: left;
+    margin-left: 0;
+}
+
+.mechreal-title {
+    font-size: 16px;
+    margin: 0 0 20px 40px;
+}
+
+.personal_center_title {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+#company_msg .personalitem {
+    margin-left: 20px;
+}
+
+.personnew_center .personalitem,
+.bind-tel {
+    line-height: 30px;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 15px;
+    clear: both;
+}
+
+#userreal2 .personnew_center .personalitem {
+    padding-left: 60px;
+}
+
+.personnew_center .personalitem:last-child {
+    /*margin-top: 40px;*/
+}
+
+.personnew_center .personalitem .show {
+    font-size: 16px;
+}
+
+.personnew_center .personalitem .idcard {
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    left: 160px;
+    width: 330px;
+    height: 210px;
+    cursor: pointer;
+}
+
+.personnew_center .personalitem label,
+.bind-tel label {
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+    width: 80px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+#mechreal .personnew_center .personalitem label,
+#mechanism .personnew_center .personalitem label {
+    width: 80px;
+}
+
+#mechreal .personnew_center .personalitem .upimgwrap label,
+#mechreal .personnew_center .personalitem .upimgwrap-ie label {
+    width: 240px;
+}
+
+.star_must {
+    color: #de6266;
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 5px;
+    height: 14px;
+    float: left;
+}
+
+.personnew_center .personalitem span {
+    color: #333;
+    font-size: 16px;
+}
+
+.personnew_center .personalitem .topersonal {
+    color: #999;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.personnew_center .personalitem .topersonal em {
+    color: #d6363b;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.personnew_center .personalitem .topersonal em:hover {
+    text-decoration: underline;
+}
+
+.personnew_center .personalitem input[type="text"],
+.personnew_center .personalitem input[type="password"] .bind-tel input[type="text"],
+.bind-user-capcha,
+.bind-msg,
+.bind-user-tel {
+    height: 30px;
+    width: 200px;
+}
+
+.personnew_center .personalitem input[type="text"]::-webkit-input-placeholder,
+.personnew_center .personalitem input[type="password"]::-webkit-input-placeholder {
+    color: #999;
+}
+
+.personnew_center .personalitem input[type="text"],
+.personnew_center .personalitem input[type="password"],
+.personnew_center .personalitem select,
+.bind-tel input[type="text"] {
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    height: 30px;
+}
+
+.personnew_center .personalitem input[type="radio"] {
+    vertical-align: middle;
+    margin: -2px 3px 0 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+.personnew_center .personalitem a:hover {
+    text-decoration: none;
+}
+
+.personnew_center .personalitem select {
+    height: 30px;
+    width: 212px;
+}
+
+.personnew_center .personalitem img.show {
+    margin-top: 10px;
+    width: 330px;
+    height: 210px;
+}
+
+.personnew_center .personalitem em.error,
+.bind-tel em.error {
+    border-color: #fff!important;
+    background-color: #fff!important;
+    color: #cd0000;
+    display: none;
+    background: url(/themes/images/my-error.png) no-repeat 0 1px;
+    padding-left: 20px;
+    margin-left: 8px;
+}
+
+.personnew_center .personalitem .getcode,
+.bind-tel .get-bind-code {
+    position: absolute;
+    color: rgb(214, 54, 59);
+    height: 14px;
+    line-height: 14px;
+    padding: 0 5px;
+    right: 5px;
+    top: 9px;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 60px;
+    text-align: center;
+    border-left: 1px solid #d7d7d7;
+}
+
+.personnew_center .personalitem .getcode:hover {
+    color: #d6363b;
+}
+
+.personnew_center .personalitem .getcode.tosend {
+    color: #666;
+    cursor: not-allowed;
+}
+
+.personnew_center .personalitem .codewrap {
+    display: inline-block;
+    position: relative;
+}
+
+.personnew_center .personalitem label.hidden {
+    display: none;
+    width: 12em;
+}
+
+.personnew_center .personalitem .img-hide {
+    width: 330px;
+    height: 210px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.personnew_center .personalitem input[type="button"].hidden {
+    display: none;
+}
+
+.personnew_center .personalitem input.submit,
+.personnew_center .personalitem input.cancel {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.personnew_center .personalitem input.submit,
+.personnew_center .personalitem input.cancel {
+    width: 100px;
+    border-radius: 3px;
+}
+
+#password input.submit {
+    margin-left: 83px;
+}
+
+.personnew_center .personalitem input.submit {
+    margin-left: 30px;
+}
+
+#mechreal .personnew_center .personalitem input.submit {
+    margin-left: 0;
+    margin-top: 40px;
+}
+
+.personnew_center .personalitem input.submit {
+    background: #d6363b;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.personnew_center .personalitem input.submit:hover {
+    background: #c93e45;
+    border: 2px solid transparent;
+}
+
+.personnew_center .personalitem input.cancel {
+    border: 1px solid #d6363b;
+    background: none;
+    color: #d6363b;
+    margin-left: 30px;
+}
+
+.personnew_center .personalitem input.cancel:hover {
+    border: 2px solid #c93e45;
+    color: #c93e45;
+}
+
+.personbox_user {
+    display: none;
+}
+
+.personnew_center .personalitem .upimgwrap {
+    margin-right: 30px;
+    width: 240px;
+    height: 190px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+    display: inline-block;
+}
+
+#userPhotoForm .ace-file-multiple {
+    float: left;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.preview-ie-wrap .ie-remove {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #fb7142;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 3px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    display: none;
+}
+
+.personnew_center .personalitem .upimgwrap img {
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 15px;
+}
+
+.personnew_center .personalitem .upimgwrap .ace-file-multiple {
+    /* float: left; */
+    height: auto;
+}
+
+.personnew_center .personalitem .upimgwrap .ace-file-input input {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 187px;
+}
+
+.personnew_center .personalitem .upimgwrap label {
+    width: 240px;
+    height: 185px;
+    border: none;
+    box-shadow: none;
+    background: #f0f2f5;
+    border-radius: 20px;
+    background: url(/themes/images/addimg.png) no-repeat 0 0;
+}
+
+.ace-file-multiple label.selected span:after,
+.ace-file-multiple label:before {
+    display: none;
+}
+
+.personnew_center .personalitem .upimgwrap label i.icon-plus {
+    /* width: 40px; */
+    /* height: 40px; */
+}
+
+.personnew_center .personalitem .upimgwrap label span {
+    margin-right: 0;
+}
+
+.ace-file-input label.selected .remove [class*="icon-"] {
+    /* background: #d6363b; */
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 3px;
+    /* background: url(/themes/images/delfile.png) no-repeat 0px 0px; */
+}
+
+.noDiv {
+    padding-top: 15%;
+}
+
+.noDiv p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.noDiv p span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.noDiv img {
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.noDiv a {
+    color: red;
+    font-size: 22px;
+}
+
+.personbox_user .renzheng {
+    position: relative;
+    height: 70px;
+    padding-left: 40px;
+}
+
+.personbox_user .renzheng .renzhenginput {
+    /* margin-left: 10px; */
+    margin-top: 12px;
+}
+
+.personbox_user .renzheng img {
+    float: left;
+    vertical-align: middle;
+    margin: 10px 15px 0 0;
+}
+
+.renzheng_fail {
+    display: inline-block;
+    line-height: 50px;
+    color: #c93e45;
+    font-size: 18px;
+}
+
+.finish .renzheng_fail {
+    color: #0ab86c;
+}
+
+.personbox_user .renzheng p {
+    font-size: 12px;
+    padding-top: 15px;
+    margin-right: 200px;
+    /* padding-left: 20px; */
+    font-size: 14px;
+}
+
+.personbox_user .renzheng p span {
+    font-size: 14px;
+}
+
+.personbox_user .renzheng input {
+    padding: 10px 30px;
+    color: #fff;
+    background: #d6363b;
+    font-size: 16px;
+    vertical-align: middle;
+    margin: 20px 0 0;
+    border-radius: 5px;
+}
+
+.personbox_user .nopass {
+    padding-left: 38px;
+    /* padding-top: 18px; */
+}
+
+.personbox_user .norenzheng {
+    background: #f4f4f4;
+}
+
+.personbox_user .norenzheng p {
+    color: #333;
+    padding-top: 26px;
+}
+
+.personbox_user .norenzheng input {
+    border: 2px solid #c8c8c8;
+    color: #666;
+}
+
+.personbox_user .finish input {
+    border: 2px solid #D8E9CB;
+}
+
+.personbox_user .start {
+    background: #f4f4f4;
+}
+
+.personbox_user .start p {
+    color: #999;
+}
+
+.personbox_user .start p span {
+    color: #333;
+}
+
+.personbox_user .finish {
+    background: #fff;
+    /* margin-left: 40px; */
+    /* padding-top: 28px; */
+}
+
+.personnew table {
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.personnew table tr:nth-child(even),
+.personnew table thead tr {
+    background: #F4F5F5;
+}
+
+.personnew table th,
+.personnew table td {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.personnew table th {
+    color: #333;
+    /* font-weight: bold; */
+}
+
+.personnew table td {
+    text-align: center;
+    color: #666;
+}
+
+.personnew table td input {
+    color: #333;
+    background: none;
+}
+
+.personnew table .start input {
+    color: #d6363b;
+}
+
+#mine-auction .personnew {
+    padding: 20px 0;
+}
+
+#mine-auction .margin-details {
+    padding: 0 0 50px 30px;
+}
+
+.personnew .tabp {
+    /* padding-left: 30px; */
+    font-size: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    /* padding-left: 40px; */
+    margin-left: 20px;
+    display: table;
+    word-spacing: -1em;
+    width: 960px;
+}
+
+.personnew .tabp span {
+    margin: 0 20px 0 40px;
+    color: #494949;
+    line-height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.personnew .tabp span.active {
+    border-bottom: 1px solid #d6363b;
+    color: #d6363b;
+    margin-bottom: -1px;
+}
+
+.person_auction {
+    display: none;
+}
+
+.person_auction .tabDiv {
+    margin-top: 20px;
+}
+
+.person_auction .tabDiv ul {
+    height: 38px;
+    background: #F3F5F7;
+    border: 0;
+    width: 96%;
+    margin: 0 auto;
+    float: inherit;
+}
+
+.person_auction .tabDiv ul li {
+    float: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 6px;
+    text-align: center;
+    width: 132px;
+    border: 0;
+    padding-left: 0;
+}
+
+.auction-deal .tabDiv ul li {
+    width: 165px;
+}
+
+.person_auction .tabDiv ul li:first-child {
+    width: 300px;
+}
+
+.person_auction .tabDiv ul li:last-child {
+    border-right: none;
+}
+
+.person_auction .tabDiv .tableDiv {
+    width: 96%;
+    margin: 18px auto 0;
+    border: 1px solid #d7d7d7;
+}
+
+.person_auction .tabDiv .tableDiv h3 {
+    background: #f3f5f7;
+    border-bottom: 0;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.personnew-card {
+    /* margin-top: -20px; */
+}
+
+.person_auction .tabDiv .tableDiv.tostart h3,
+.person_auction .tabDiv .tableDiv.now h3 {
+    border-bottom: 1px solid #E4F9FE;
+    background: #F1FCFF;
+}
+
+.person_auction .tabDiv .tableDiv h3 .first-span {
+    width: 263px;
+    float: left;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    padding-left: 50px;
+    text-align: left;
+    white-space: nowrap;
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
+.person_auction .tabDiv .tableDiv h3 .else-span,
+.person_auction .tabDiv .tableDiv h3 .else-span2 {
+    width: 320px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.person_auction .tabDiv .tableDiv table,
+.person_auction .tabDiv .tableDiv table td {
+    border: none;
+}
+
+.person_auction .tabDiv .tableDiv table {
+    width: 100%;
+    height: 90px;
+    margin: 10px auto 0;
+}
+
+.person_auction .tabDiv .tableDiv table td {
+    float: left;
+    border-right: 1px solid #d7d7d7;
+    line-height: 80px;
+    height: 80px;
+    font-size: 12px;
+}
+
+.person_auction .tabDiv .tableDiv table td:last-child {
+    border-right: none;
+}
+
+.person_auction .tabDiv .tableDiv table td.img {
+    width: 294px;
+}
+
+.person_auction .tabDiv .tableDiv table td.img a {
+    display: table;
+    height: 80px;
+    overflow: hidden;
+}
+
+.person_auction .tabDiv .tableDiv table td.img img {
+    vertical-align: middle;
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.person_auction .tabDiv .tableDiv table td.img span {
+    padding: 0 5px 0 0;
+    color: #333;
+    line-height: 22px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.person_auction .tabDiv .tableDiv table td.img span:hover {
+    color: #d6363b;
+}
+
+.person_auction .tabDiv .tableDiv table td.img a:hover {
+    text-decoration: none;
+}
+
+.person_auction .tabDiv .tableDiv table td.price .price-box {
+    padding: 22px 0 0 0;
+    line-height: 18px;
+}
+
+.person_auction .tabDiv .tableDiv table td.price .price-box-rest {
+    padding-top: 5px;
+}
+
+.person_auction .tabDiv .tableDiv table td.price span.money {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.person_auction .tabDiv .tableDiv table td.price span {
+    color: #333;
+}
+
+.time-box {
+    line-height: 22px;
+    padding-top: 22px;
+}
+
+.person_auction .tabDiv .tableDiv table td {
+    width: 132px;
+}
+
+.auction-deal .tabDiv .tableDiv table td {
+    width: 165px;
+}
+
+.person_auction .tabDiv .tableDiv table td.price {
+    color: #A9A9A9;
+}
+
+.person_auction .tabDiv .tableDiv table td.price span {
+    color: #333;
+}
+
+.person_auction .tabDiv .tableDiv table td.price span.money {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.person_auction .tabDiv .tableDiv table td.start input.startbtn {
+    color: #67BC1F;
+}
+
+.person_auction .tabDiv .tableDiv table td.start input.nowbtn,
+.person_auction .tabDiv .tableDiv table td.start input.releasebtn {
+    color: #C52327;
+}
+
+.person_auction .tabDiv .tableDiv table td.start input.finishbtn {
+    color: #333;
+}
+
+.person_auction .tabDiv .finish table td.button input.people {
+    display: none;
+}
+
+.person_auction .tabDiv .tableDiv table td.time span,
+.person_auction .tabDiv .tableDiv table td.time img,
+.person_auction .tabDiv .tableDiv table td.time em {
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+}
+
+.person_bail.bond td.name {
+    display: none;
+}
+
+.person_auction .tabDiv .tableDiv table td.time span,
+.person_auction .tabDiv .tableDiv table td.time em {
+    width: 100%;
+    height: 22px;
+    color: #333;
+}
+
+.person_auction .tabDiv .tableDiv table td.time img {
+    vertical-align: middle;
+    margin: 5px 0 0 45%;
+}
+
+.person_auction .tabDiv .tableDiv table td.time em {
+    color: #999;
+}
+
+.person_auction .tabDiv .tableDiv table td.name {
+    color: #333;
+}
+
+.person_auction .tabDiv .tableDiv table td.button {
+    line-height: 30px;
+}
+
+.person_auction .tabDiv .tableDiv table td.button input,
+.person_auction .tabDiv .tableDiv table td.button select {
+    background: #fff;
+    border: 1px solid #d6363b;
+    width: 90px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 28px;
+    color: #d6363b;
+    border-radius: 4px;
+    padding: 4px 0 5px;
+    cursor: pointer;
+}
+
+.person_auction .tabDiv .tableDiv table td.button input:hover {
+    border-color: #C93e45;
+    color: #C93e45;
+}
+
+.person_auction .tabDiv .tableDiv table td.button select {
+    text-align: center;
+    padding-left: 6px;
+}
+
+.person_auction .tabDiv .tableDiv table td.button select option {
+    background: #ffffff;
+    color: #000;
+}
+
+.person_auction .tabDiv .finish,
+.person_bail .tabDiv .tableDiv {
+    border: 1px solid #f1f1f1;
+}
+
+.person_auction .tabDiv .finish h3,
+.person_bail .tabDiv .tableDiv h3 {
+    background: #FCFCFC;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.person_auction .tabDiv .finish table td,
+.person_bail .tabDiv .tableDiv table td {
+    border-right: 1px solid #f1f1f1;
+}
+
+.person_auction .tabDiv .now table td.button input.look,
+.person_auction .tabDiv .finish table td.button input.look,
+.person_bail .tabDiv .tableDiv table td.button input.look,
+.person_auction .tabDiv table td.button input.bond {
+    margin-top: 30px;
+}
+
+.person_auction .tabDiv .now table td.button input.people {
+    display: none;
+}
+
+.person_bail .tabDiv .tableDiv table td.time {
+    text-align: center;
+}
+
+.person_bail .tabDiv .tableDiv table td.time span {
+    line-height: 30px;
+    color: #333;
+    float: inherit;
+    text-align: center;
+}
+
+.ace-file-multiple label span img {
+    width: 100%;
+    height: 100%;
+}
+
+.margin-details-intro {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+.details-title {
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 20px;
+}
+
+.details-title span {
+    display: inline-block;
+    /* line-height: 32px; */
+    /* height: 32px; */
+    /* border-bottom: 1px solid #d6363b; */
+    color: #333;
+}
+
+.intro-text {
+    padding: 30px 0 10px;
+    line-height: 1;
+    font-size: 14px;
+    color: #666;
+}
+
+.info2 {
+    font-size: 16px;
+    color: #d6363b;
+    margin-top: 20px;
+    padding: 0 0 0 30px;
+}
+
+.info3 {
+    padding: 12px 0 0 30px;
+}
+
+.margin-details .intro-text span {
+    color: #333;
+    font-size: 16px;
+}
+
+.margin-details {
+    padding: 30px 20px 50px;
+}
+
+.margin-details .intro-text span {
+    color: #333;
+    font-size: 16px;
+}
+
+.margin-details-list h3,
+.margin-details-order h3 {
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    padding: 30px 0 20px;
+}
+
+.margin-details-list .list-table {
+    width: 880px;
+    margin-left: 30px;
+    border: 1px solid #f1f1f1;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.margin-details-list .list-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.list-table .detail-time i {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    display: inline-block;
+    vertical-align: -2px;
+    margin-left: 30px;
+}
+
+.list-table th,
+.list-table td {
+    width: 20%;
+}
+
+.list-table th.detail-time,
+.list-table td.detail-time {
+    width: 25%;
+}
+
+.list-table th.detail-oprea,
+.list-table td.detail-oprea {
+    width: 15%;
+}
+
+.margin-details-list .list-table th,
+.margin-details-list .list-table td {
+    font-size: 14px;
+    color: #333;
+    line-height: 40px;
+    height: 40px;
+    background: #f3f5f7;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.margin-details-list .list-table td {
+    background: none;
+    font-size: 12px;
+}
+
+.margin-details-list .list-table td.depositStatus {
+    color: #d6363b;
+}
+
+.margin-details-order .details-order-info {
+    /* border: 1px solid #f1f1f1; */
+}
+
+.margin-details-order .details-order-info {
+    line-height: 1;
+    font-size: 12px;
+    padding: 0 20px 40px;
+}
+
+.margin-details-order .details-order-info .order-info-item {
+    margin-bottom: 15px;
+}
+
+.margin-details-order .details-order-info label {
+    color: #666666;
+    /* width: 73px; */
+    display: inline-block;
+    /* font-weight: 700; */
+    font-size: 14px;
+}
+
+.margin-details-order .details-order-info .auc-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.margin-details-order .details-order-info .auc-name:hover {
+    /* color: #d6363b; */
+}
+
+.margin-details-order .details-order-info .auc-name:hover {
+    text-decoration: none;
+}
+
+.margin-details-order .details-order-info span {
+    font-size: 18px;
+    color: #333;
+}
+
+.bank-card .no-real-name {
+    padding: 60px 40px;
+    margin-top: 20px;
+}
+
+.bank-card .no-real-name a {
+    color: #c63239;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bank-card .card-list {
+    width: 997px;
+}
+
+.bank-card .card-list li {
+    float: left;
+    width: 266px;
+    /* margin-right: 30px; */
+    /* border: 0; */
+    /* margin-bottom: 40px; */
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    margin-left: 47px;
+    /* margin-top: 20px; */
+    display: none;
+    border-radius: 12px;
+    height: 156px;
+    background: #f3f5f7;
+    box-shadow: 0px 0px 10px #d0d0d0;
+}
+
+.bank-card .card-list li .bank-address span.line {
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #ddd;
+}
+
+.bank-card .card-list li span.bank-num {
+    float: right;
+}
+
+.bank-card .card-list li .bank-info {
+    line-height: 50px;
+    /* padding: 0 15px 0px 10px; */
+}
+
+.bank-card .card-list li .bank-info .bank-logo {
+    width: 180px;
+    height: 52px;
+    display: block;
+    /* vertical-align: -10px; */
+    background: url("/themes/images/submitlogo.png") -7px 0px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon12 {
+    background: url("/themes/images/submitlogo.png") -227px 0px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon13 {
+    background: url("/themes/images/submitlogo.png") -400px 0px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon14 {
+    background: url("/themes/images/submitlogo.png") -606px 0px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon15 {
+    background: url("/themes/images/submitlogo.png") -806px 0px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon21 {
+    background: url("/themes/images/submitlogo.png") -32px -52px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon22 {
+    background: url("/themes/images/submitlogo.png") -227px -52px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon23 {
+    background: url("/themes/images/submitlogo.png") -400px -52px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon24 {
+    background: url("/themes/images/submitlogo.png") -588px -52px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon25 {
+    background: url("/themes/images/submitlogo.png") -802px -52px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon31 {
+    background: url("/themes/images/submitlogo.png") 0 -107px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon32 {
+    background: url("/themes/images/submitlogo.png") -215px -107px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon33 {
+    background: url("/themes/images/submitlogo.png") -400px -107px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon34 {
+    background: url("/themes/images/submitlogo.png") -630px -107px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon35 {
+    background: url("/themes/images/submitlogo.png") -809px -107px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon41 {
+    background: url("/themes/images/submitlogo.png") -20px -155px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon42 {
+    background: url("/themes/images/submitlogo.png") -210px -155px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon43 {
+    background: url("/themes/images/submitlogo.png") -415px -155px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon44 {
+    background: url("/themes/images/submitlogo.png") -615px -155px;
+    background-size: auto 210px;
+}
+
+.bank-card .card-list li .bank-info .bank-logo.icon45 {
+    background: url("/themes/images/submitlogo.png") -790px -155px;
+    background-size: auto 210px;
+}
+
+.cell-bank-code {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bank-card .card-list li .bank-address {
+    padding: 0px 15px 15px;
+    /* line-height: 1.8; */
+    font-size: 12px;
+}
+
+.bank-card .card-list li .bank-address-bottom {
+    font-size: 12px;
+    color: #666;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.bind-remind {
+    height: 50px;
+    background: #dcfbee;
+    padding-left: 40px;
+    display: none;
+    margin-top: -20px;
+}
+
+.bind-remind span {
+    color: #0ab86c;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.bank-card .card-list li .bank-address-top {
+    color: #666;
+}
+
+.bank-card .card-list li .bank-del {
+    border: 1px solid #c8c8c8;
+    color: #666666;
+    border-radius: 3px;
+    float: right;
+    padding: 0 7px;
+    line-height: 18px;
+    margin-right: 0px;
+    margin-top: -3px;
+    /* background: #d7d7d7; */
+}
+
+.bank-card .card-list li .addmore img {
+    margin: 78px 138px;
+}
+
+.personnew .del_btn {
+    padding: 2px 18px;
+    border: 1px solid #999;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.personnew .car_view {
+    display: none;
+}
+
+#addBank {
+    margin-left: 40px;
+    width: 900px;
+    /* padding-top: 10px; */
+    display: none;
+}
+
+#addBank_tip span {
+    margin-left: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+#addBank_tip a {
+    color: #d6363b;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.picexampleone {
+    float: left;
+    width: 300px;
+    line-height: 160px;
+    margin-left: 35px;
+    height: 185px;
+    cursor: pointer;
+}
+
+input#userPhoto {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 330px;
+    height: 210px;
+    overflow: hidden;
+    line-height: 99em;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.upimgwrap-ie {
+    margin-right: 60px;
+    width: 240px;
+    height: 152px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+    display: none;
+}
+
+.personnew_center .personalitem .upimgwrapType {
+    display: none;
+}
+
+.preview-ie-wrap {
+    height: auto;
+    line-height: normal;
+    position: relative;
+    width: 100%;
+}
+
+.preview-ie-input {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 153px;
+    width: 240px;
+    position: absolute;
+    z-index: -1;
+}
+
+.personnew_center .personalitem .preview-ie-wrap .preview-ie-label {
+    width: 240px;
+    height: 152px;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+.preview-ie-wrap .custorm-style {
+    background: url('/themes/images/addimg.png') no-repeat center center;
+    border: 1px solid #ddd;
+    width: 238px;
+    height: 150px;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.preview-ie-wrap .ie-remove {
+    right: -12px;
+    top: -12px;
+    z-index: 100;
+    display: none;
+    position: absolute;
+    background: url('/themes/images/delfile.png') no-repeat 0 0;
+}
+
+.picexample div span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.picexample div img {
+    cursor: pointer;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+}
+
+.picexample div img.big {
+    border-radius: 15px;
+}
+
+.opcy_new {
+    height: 1788px;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.3);
+    filter: alpha(opacity=30);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+}
+
+.personnew .pagination .break,
+.pagination .current,
+.pagination .next,
+.pagination .previous,
+.personnew .pagination .route,
+.pagination a {
+    border: 1px solid #d7d7d7;
+}
+
+.user-nobind-tel {
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 240px;
+    display: none;
+}
+
+.user-nobind-tel p {
+    padding: 70px 0 40px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.user-nobind-tel input {
+    background: #d6363b;
+    color: #fff;
+    width: 124px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.bind-tel .getcapcha {
+    position: absolute;
+    width: 97px;
+    height: 32px;
+    right: 0;
+    top: 0;
+}
+
+.bind-tel .getcapcha img {
+    width: 100%;
+    height: 100%;
+}
+
+.bind-tel .codewrap {
+    display: inline-block;
+    position: relative;
+}
+
+.get-bind-code.tosend,
+#userreal .getcode.tosend {
+    color: #cdcdcd;
+    cursor: not-allowed;
+}
+
+#userreal p {
+    font-size: 12px;
+    color: #333;
+    margin-left: 83px;
+}
+
+#userreal2 .personnew_center .personalitem,
+#mechreal .personnew_center .personalitem {
+    padding-left: 60px;
+}
+
+#userreal2 .personnew_center .personalitem label {
+    text-align: left;
+}
+
+#userreal2 .personnew_center .personalitem input.submit,
+#userreal2 .personnew_center .personalitem input.cancel {
+    width: 130px;
+    margin-top: 20px;
+}
+
+.personbox_user .renzheng input.rgrz {
+    border: 1px solid #d6363b;
+    background: none;
+    color: #d6363b;
+    margin-left: 30px;
+}
+
+.user-real-show .personnew_center {
+    padding-left: 20px;
+}
+
+.user-real-show .personnew_center .personalitem label {
+    width: 50px;
+    text-align: left;
+}
+
+#userreal .upimgwrap {
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+#userreal .upimgieSys {
+    margin-right: 30px;
+    padding-left: 20px;
+    width: 240px;
+    height: 152px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    float: left;
+    display: none;
+}
+
+#userreal .uploadmind1 {
+    padding-left: 24px;
+    float: none;
+}
+
+#userreal .uploadmind1 div {
+    float: left;
+    width: 246px;
+    margin-right: 47px;
+}
+
+.picexampleUse {
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.picexampleUse div {
+    float: left;
+    width: 275px;
+    margin-right: 20px;
+}
+
+.picexampleUse div span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.picexampleUse div img {
+    cursor: pointer;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+}
+
+.picexampleUse div img.big {
+    border-radius: 15px;
+}
+
+#password .tips {
+    margin-left: 83px;
+    color: #999;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.dialog {
+    text-align: center;
+    width: 400px;
+    padding: 50px 30px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    z-index: 9999;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.go-login {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d6363b;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 60px;
+}
+
+.go-login:hover {
+    color: #fff;
+    background: #c93e45;
+}
+
+.dialog h3 {
+    color: #666;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: -3px;
+}
+
+.userreal2-error {
+    margin-top: 20px;
+}
+
+#user .submit {
+    margin-left: 80px;
+}
+
+#userreal .notallowed {
+    cursor: not-allowed;
+    background: #d7d7d7;
+}

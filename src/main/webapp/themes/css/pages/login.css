@@ -1,0 +1,229 @@
+input:-moz-placeholder,
+input:-ms-input-placeholder,
+input::-webkit-input-placeholder {
+    color: #e1e1e1;
+}
+
+.sifa-head {
+    height: 82px;
+}
+
+.sifa-head .head-img {
+    text-align: left;
+    float: none;
+    padding: 20px 0;
+}
+
+.login-head {
+    background: #ffffff;
+}
+
+.login .container {
+    background: url("/themes/images/loginback.png") no-repeat 90px center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-head .nav-con {
+    box-shadow: none;
+    border-bottom: none;
+    background: none;
+    padding-top: 20px;
+}
+
+.sifalogin-foot {
+    background: #fff;
+}
+
+.sifalogin-foot .foot p {
+    border-top: 1px solid #ebebeb;
+    color: #ddd;
+}
+
+.login {
+    width: 100%;
+    background: #f24b53;
+}
+
+.loginDiv {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.loginleft {
+    float: left;
+}
+
+.loginleft img {
+    vertical-align: middle;
+    margin: 63px 0 0 54px;
+}
+
+.loginright {
+    float: right;
+    margin: 100px 25px;
+    padding: 15px 15px 10px;
+    background: #fff;
+    width: 320px;
+}
+
+.loginright .yanzheng {
+    display: none;
+}
+
+.loginright h2 {
+    color: #333333;
+    font-size: 18px;
+}
+
+.loginright .input-line {
+    border-bottom: 1px solid #dadada;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loginright .input-line span {
+    float: left;
+    margin: 12.5px 7.5px;
+    width: 25px;
+    height: 25px;
+    background: url(/themes/images/newicon.png) no-repeat 0px 0px;
+}
+
+.loginright .input-line span.password {
+    background-position: -25px 0px;
+}
+
+.loginright .input-line span.capache {
+    background-position: -50px -25px;
+}
+
+.loginright .input-line span.error-img {
+    margin: -5.5px 4.5px;
+    background-position: -75px -25px;
+}
+
+.loginright .input-line .error.isempty .error-img {
+    background-position: 0px -50px;
+}
+
+.loginright .input-line input {
+    font-size: 14px;
+    color: #333333;
+    width: 70%;
+}
+
+.loginright .input-line .close {
+    width: 20px;
+    height: 20px;
+    background: url(/themes/images/newicon.png) -3px -27px;
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    top: 15px;
+}
+
+.loginright .error-wrap {
+    height: 14px;
+    line-height: 14px;
+    padding: 30px 0 10px;
+    border-bottom: none;
+}
+
+.loginright .error {
+    color: #f7797e;
+    font-size: 14px;
+    line-height: 14px;
+    display: none;
+}
+
+.loginright .input-line .error.isempty {
+    color: #fa9717;
+}
+
+.loginright .input-line .inputcode {
+    width: 40%;
+    text-indent: 5px;
+}
+
+.getcapache {
+    float: right;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.getcapache img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.loginright .go-login {
+    margin: 60px 0 45px;
+    padding: 0 20px;
+}
+
+.loginright .loginbtn {
+    background: #c93e45;
+    color: #fff;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.loginright .loginbtn:hover {
+    background: #b22c33;
+    color: #fff;
+}
+
+.capache-tit {
+    display: inline-block;
+    text-indent: 5px;
+}
+
+.other-info {
+    padding: 12px 0;
+    font-size: 12px;
+    color: #666666;
+    overflow: hidden;
+    -webkit-user-select: none;
+}
+
+.other-info a {
+    color: #666666;
+}
+
+.forget-password {
+    float: right;
+}
+
+.is-auto .auto-img {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: -1px;
+    margin-right: 10px;
+    background: url(/themes/images/newicon.png) no-repeat -58px -5px;
+}
+
+.is-auto.active .auto-img {
+    background: url(/themes/images/newicon.png) no-repeat -82px -5px;
+}
+
+.loginright .zhuce,
+.loginright .zhuce:hover {
+    color: #f7797e;
+    margin-left: 10px;
+}
+
+.go-register {
+    font-size: 14px;
+    color: #666666;
+}

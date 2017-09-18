@@ -1,0 +1,8 @@
+.time-content li {
+    width: 126px;
+}
+
+.active a:after {
+    width: 0;
+    height: 0;
+}

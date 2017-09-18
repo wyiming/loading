@@ -1,0 +1,199 @@
+<project name="proxy-web" default="build" basedir="../">
+  <description>SeaJS Build File</description>
+	<dirname property="root.dir" file="${ant.file.proxy-web}/../"/>
+	<echo message="${ant.file.proxy-web}"/>
+	<property name="src.dir" location="${root.dir}/src/main/webapp/"/>
+	<property name="charset" value="utf-8"/>
+	<property name="target.dir" value="${root.dir}/src/main/maven"/>
+	<property name="war.dir" value="${root.dir}/target"/>
+	<property name="tools.dir" location="${root.dir}/tools/"/>
+	<property name="gcc.jar" location="${tools.dir}/compiler.jar"/>
+	<property name="charset" value="utf-8" />
+    
+	<taskdef resource="net/sf/antcontrib/antlib.xml">  
+	  <classpath>  
+	    <pathelement location="${tools.dir}/ant-contrib-1.0b3.jar"/>  
+	  </classpath>  
+	</taskdef>  
+	
+	<target name="init">
+	  	<delete dir="${target.dir}" />
+		<mkdir dir="${target.dir}/scripts/"/>
+		<mkdir dir="${target.dir}/themes"/>
+		<mkdir dir="${target.dir}/pages"/>
+		<mkdir dir="${target.dir}/proxy/static/js"/>
+	</target>
+	
+	
+	<target name="prepare" depends="init">
+		<echo message="复制js"></echo>		
+		<copy todir="${target.dir}/scripts">
+			<fileset dir="${src.dir}/scripts/" includes="**/*.js"></fileset>
+			<fileset dir="${src.dir}/scripts/" includes="**/*.swf"></fileset>
+	  	</copy>
+
+		<echo message="复制样式文件"></echo>	
+		<copy todir="${target.dir}/themes">
+			<fileset dir="${src.dir}/themes/" excludes="**/.svn"></fileset>
+	  	</copy>
+		<echo message="复制页面文件"></echo>	
+		<copy todir="${target.dir}/">
+			<fileset dir="${src.dir}/" excludes="**/.svn"></fileset>
+	  	</copy>
+	</target>
+	
+	
+	<target name="compress-global" depends="prepare">
+		<echo message="全局代码压缩"></echo>
+		<apply executable="java"  failonerror="true">
+				<fileset dir="${target.dir}/scripts/global/"> 
+					<include name="**/*.js"/>
+				</fileset> 
+				<arg line="-jar" />
+				<arg path="${gcc.jar}" />
+				<arg line="--externs ${tools.dir}/extern_global.js" />
+				<arg line="--compilation_level SIMPLE_OPTIMIZATIONS" />
+				<arg line="--warning_level VERBOSE" />
+				<arg line="--jscomp_off=checkTypes" />
+				<arg line="--jscomp_error=checkDebuggerStatement" />
+				<arg value="--js_output_file" /> 
+				<targetfile /> 
+				<arg value="--js" />
+			<mapper type="glob" from="*.js" to="${target.dir}/proxy/static/js/*" />
+			</apply>
+			<for param="file">
+					<path>
+						<fileset dir="${target.dir}/scripts/global/"></fileset>
+					</path>
+							    <sequential>
+									<echo message="遍历文件"></echo>
+								    <echo message="@{file}"></echo>
+							    	<propertyregex override="yes" property="filename" input="@{file}" regexp="/.+/(\w+)+" replace="\1"/>
+									<echo message="${filename}"></echo>
+							    	<propertyregex override="yes" property="tfile" input="${filename}" regexp="(\w+.).js" replace="\1"/>
+							    	<echo message="${tfile}"></echo>
+							    	<replace file ="${target.dir}/scripts/loading.js" 
+							    		token="|file_res|" 
+							    		value="${line.separator}_resource.res['/scripts/global/${tfile}.js'] = '${tfile}.|${tfile}|.js';|file_res|"></replace>
+							    </sequential>
+			</for>
+	</target>
+
+	<target name="compress-plugin" depends="prepare">
+		<concat destfile="${target.dir}/scripts/plugin/all.plugin.js" encoding="${charset}" outputencoding="${charset}">
+			<path path="${src.dir}/scripts/plugin/plugin.lot.js" />
+			<path path="${src.dir}/scripts/plugin/plugin.notice.js" />
+			<path path="${src.dir}/scripts/plugin/plugin.page.js" />
+			<path path="${src.dir}/scripts/plugin/portal.js" />
+			<path path="${src.dir}/scripts/plugin/proxy.lot.js" />
+			<path path="${src.dir}/scripts/plugin/plugin.countdown.js" />
+		</concat>
+		
+		<echo message="压缩插件"></echo>
+		<apply executable="java"  failonerror="true">
+				<fileset dir="${target.dir}/scripts/plugin"> 
+					<include name="**/*.js"/>
+				</fileset> 
+				<arg line="-jar" />
+				<arg path="${gcc.jar}" />
+				<arg line="--externs ${tools.dir}/extern.js" />
+				<arg line="--compilation_level SIMPLE_OPTIMIZATIONS" />
+				<arg line="--warning_level VERBOSE" />
+				<arg line="--jscomp_off=checkTypes" />
+				<arg line="--jscomp_error=checkDebuggerStatement" />
+				<arg value="--js_output_file" /> 
+				<targetfile /> 
+				<arg value="--js" />
+			<mapper type="glob" from="*.js" to="${target.dir}/proxy/static/js/*" />
+		</apply>
+		<for param="file">
+					<path>
+						<fileset dir="${target.dir}/scripts/plugin"></fileset>
+					</path>
+				    <sequential>
+				    	<propertyregex override="yes" property="filename" input="@{file}" regexp="/.+/(\w+)+" replace="\1"/>
+				    	<propertyregex override="yes" property="tfile" input="${filename}" regexp="(\w+.).js" replace="\1"/>
+				    	<echo message="${tfile}"></echo>
+				    	<replace file ="${target.dir}/scripts/loading.js" 
+				    		token="|file_res|" 
+				    		value="${line.separator}_resource.res['/scripts/plugin/${tfile}.js'] = '${tfile}.|${tfile}|.js';|file_res|"></replace>
+				    </sequential>
+		</for>
+		
+	</target>
+	
+
+	
+	<target name="compress-pages" depends="prepare" >
+			<apply executable="java"  failonerror="true">
+				<fileset dir="${target.dir}/scripts/pages/"> 
+					<include name="**/*.js"/>
+				</fileset> 
+				<arg line="-jar" />
+				<arg path="${gcc.jar}" />
+				<arg line="--externs ${tools.dir}/extern.js" />
+				<arg line="--compilation_level SIMPLE_OPTIMIZATIONS" />
+				<arg line="--warning_level VERBOSE" />
+				<arg line="--jscomp_off=checkTypes" />
+				<arg line="--jscomp_error=checkDebuggerStatement" />
+				<arg value="--js_output_file" /> 
+				<targetfile /> 
+				<arg value="--js" />
+				<mapper type="glob" from="*.js" to="${target.dir}/proxy/static/js/*" />
+			</apply>
+			<for param="file">
+						<path>
+							<fileset dir="${target.dir}/scripts/pages/"></fileset>
+						</path>
+					    <sequential>
+					    	<propertyregex override="yes" property="filename" input="@{file}" regexp="/.+/(\w+)+" replace="\1"/>
+					    	<propertyregex override="yes" property="tfile" input="${filename}" regexp="(\w+.).js" replace="\1"/>
+					    	<echo message="${tfile}"></echo>
+					    	<replace file ="${target.dir}/scripts/loading.js" 
+					    		token="|file_res|" 
+					    		value="${line.separator}_resource.res['/scripts/pages/${tfile}.js'] = '${tfile}.|${tfile}|.js';|file_res|"></replace>
+					    </sequential>
+			</for>
+		
+	</target>
+
+	<target name="compress" depends="compress-global,compress-pages,compress-plugin">
+		<echo message="压缩完成"> </echo>
+	</target>	
+	
+	<target name="package" depends="compress">
+		<replace file ="${target.dir}/scripts/loading.js" token="|file_res|" value=""></replace>
+		<for param="file">
+			<path>
+				<fileset dir="${target.dir}/proxy/static/js/"></fileset>
+			</path>
+		    <sequential>
+		        <local name="md5" />
+		        <checksum file="@{file}" algorithm="md5" format="MD5SUM" property="md5"/>
+		    	<propertyregex override="yes" property="filename" input="@{file}" regexp="/.+/(\w+)+" replace="\1"/>
+		    	<echo message="${filename}"></echo>
+		    	<move file="@{file}" tofile="@{file}.${md5}.js"/>
+		    	<property name="@{file}" value="${md5}"/>
+		    	<replace file ="${target.dir}/scripts/loading.js" token="|${filename}|" value="${md5}"></replace>
+		    </sequential>
+		</for>
+	</target>
+	<tstamp>
+		<format property="now" pattern="yyyy-MM-dd HH:mm:ss SSS"/>
+		<format property="loadTag" pattern="yyyyMMddHHmm"/>
+	</tstamp>
+	<target name="release" depends="package"> 
+		<replace file ="${target.dir}/scripts/loading.js" token="|edition|" value="release"></replace>
+		<replace file ="${target.dir}/scripts/loading.js" token="|now|" value="${now}"></replace>
+		<replace file ="${target.dir}/index.html" encoding="utf-8" token="|now|" value="${loadTag}"></replace>
+		<replace dir ="${target.dir}/pages" encoding="utf-8" token="|now|" value="${loadTag}"></replace>
+	</target>
+	
+	<target name="build" depends="package">
+		<replace file ="${target.dir}/scripts/loading.js" token="|edition|" value="develop"></replace>
+		<replace file ="${target.dir}/scripts/loading.js" token="|now|" value="${now}"></replace>
+		<replace file ="${target.dir}/index.html" encoding="utf-8" token="|now|" value="${loadTag}"></replace>
+		<replace dir ="${target.dir}/pages" encoding="utf-8" token="|now|" value="${loadTag}"></replace>
+	</target>
+
+</project>

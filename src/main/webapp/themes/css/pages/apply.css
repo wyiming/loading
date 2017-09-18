@@ -1,0 +1,689 @@
+body {
+    position: relative;
+}
+
+.apply-content {
+    margin: 18px 0 40px;
+}
+
+.bail {
+    background: #ffffff;
+}
+
+.bail-msg {
+    overflow: hidden;
+}
+
+.bail-msg li {
+    font-size: 15px;
+    color: #666;
+    line-height: 35px;
+}
+
+#noticeTitle {
+    font-size: 18px;
+    color: black;
+    margin-left: 12px;
+}
+
+#goodsTitle {
+    font-size: 18px;
+    color: black;
+    margin-left: 12px;
+}
+
+.fee_span {
+    display: none;
+}
+
+.renz_info h2 {
+    margin-bottom: 10px;
+}
+
+.indiv_info p {
+    margin: 5px 0;
+}
+
+.cash-price {
+    margin-left: 20px;
+    color: #d6363b;
+    font-size: 24px;
+}
+
+.yahei {
+    margin-left: 8px;
+}
+
+.paystep a:hover {
+    text-decoration: none;
+}
+
+.bail .bail-section {
+    padding: 12px 20px 20px;
+}
+
+.bidder {
+    background: #ffffff;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.bidder .bidderSection {
+    margin: 30px 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bidder .bidderSection .bd {
+    padding: 0 30px;
+    color: #666;
+    font-size: 12px;
+}
+
+.bail .bailEnroll {
+    padding: 0 0 20px;
+    line-height: 26px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.bail .bailEnroll span {
+    *zoom: 1;
+    *display: inline;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bail .bailEnroll span.fee_span {
+    display: none;
+    vertical-align: 0;
+}
+
+.bail .bailEnroll span.fee_span i {
+    color: #d6363b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bail .bailEnroll .price {
+    color: #d6363b;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: inherit;
+}
+
+.bail .bailEnroll .fee_num {
+    color: #d6363b;
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: inherit;
+}
+
+.bail .bailExplain {
+    color: #666;
+    font-size: 12px;
+    padding: 2px 0 0;
+    line-height: 20px;
+}
+
+.bail .bailExplain em.red-em {
+    color: #d6363b;
+    font-weight: bold;
+}
+
+.bail .bailExplain a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.bail .bailExplain a:hover {
+    text-decoration: underline;
+}
+
+.bidder table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#bidder_section_div table tr {
+    overflow: hidden;
+}
+
+#bidder_section_div table .card-type .labeld {
+    padding: 20px 0;
+}
+
+.bidder table td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.bidder .checkCode-img {
+    height: 26px;
+    vertical-align: middle;
+}
+
+.bidder .agree-content {
+    padding: 20px;
+    border: 1px solid #dedede;
+    margin-top: 10px;
+}
+
+.bidder .agree-detail {
+    color: #999;
+    height: 200px;
+    line-height: 20px;
+    overflow-y: scroll;
+}
+
+.bidder .agree-detail .agree-detail-title {
+    color: #666;
+}
+
+.bidder .agree-detail p {
+    color: #666;
+    text-indent: 24px;
+}
+
+.bidder .agree input {
+    vertical-align: middle;
+    margin: -1px 0 0 0px;
+    display: none;
+}
+
+.bidder .agree .fields {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.fields select {
+    border: 1px solid #dedede;
+    padding: 0;
+    margin-right: 10px;
+    width: 190px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 0px;
+    float: left;
+    background: none;
+}
+
+.submit-content {
+    position: relative;
+    text-align: left;
+}
+
+.submit-content .submit {
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    margin: 30px 81px 0;
+    background: #d6363b;
+    text-decoration: none;
+    font-size: 16px;
+    /* font-weight: 700; */
+    border-radius: 4px;
+}
+
+.submit-content .submit:hover {
+    background: #c93e45;
+}
+
+.submit.disabled,
+.submit.disabled:hover {
+    cursor: not-allowed;
+    background: #d7d7d7;
+}
+
+.hd {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.hd h3 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.hd h3 .title {
+    float: left;
+    font-size: 16px;
+    height: 16px;
+    color: #333;
+    /* font-weight: bold; */
+}
+
+.hd h3 .title span {
+    background: #a3a3a3;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.hd h3 .sub-title {
+    float: left;
+    color: #d6363b;
+    font-size: 12px;
+    display: inline;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.bidder .bidderSection {
+    margin: 0 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#bidder_section_div .error-msg {
+    float: left;
+    color: #cd0000;
+}
+
+.bd .priority-tip {
+    font-size: 12px;
+    color: #666;
+    padding-left: 108px;
+}
+
+.bd .priority-tip span {
+    color: #d6363b;
+}
+
+.bd .priority-tip a {
+    color: #1266c5;
+}
+
+.bd .card-error {
+    float: left;
+}
+
+.fields .card-tips {
+    float: left;
+    margin-top: 10px;
+    color: #5ea0d6;
+    font-weight: 400;
+    width: 800px;
+    display: none;
+}
+
+.hd-checkbox {
+    height: 30px;
+    line-height: 30px;
+}
+
+.hd-checkbox p {
+    float: left;
+    padding-left: 30px;
+}
+
+.hd-checkbox p span {
+    float: left;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.hd-checkbox p input {
+    vertical-align: middle;
+    margin: -2px 3px 0 0;
+    display: none;
+}
+
+.hd-checkbox .add {
+    float: left;
+    background: #C3262D;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hd-select {
+    margin-top: 10px;
+}
+
+.hd-select p {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.hd-select span {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    color: #999;
+}
+
+.hd-select span.error-msg {
+    display: none;
+    width: 150px;
+    text-align: left;
+}
+
+.hd-select span a {
+    margin-right: 8px;
+}
+
+.hd-select input {
+    width: 250px;
+    vertical-align: -1px;
+    padding: 3px 10px;
+    border: 1px solid #ddd;
+}
+
+.hd-select select {
+    width: 272px;
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.bidderSection .checkbox {
+    width: 20px;
+    height: 20px;
+    background: url(/themes/images/ico.png) no-repeat 0 -181px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: -2px 10px 0 0;
+}
+
+.bidderSection .checkbox.active {
+    background-position: -28px -181px;
+}
+
+.error-msg {
+    display: none;
+    color: #f79c42;
+    padding-left: 10px;
+    font-weight: 400;
+    vertical-align: top;
+    margin-top: 2px;
+    line-height: 30px;
+}
+
+.error-msg img {
+    margin-top: -3px;
+    /* margin-left: 10px; */
+}
+
+.input {
+    float: left;
+    width: 168px;
+    color: #333;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #dedede;
+}
+
+#idType:disabled {
+    background: #f3f5f7;
+    margin-right: 10px;
+}
+
+.labeld {
+    color: #999;
+    font-weight: normal;
+}
+
+td.labeld {
+    width: 100px;
+}
+
+.bidder table td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.link {
+    color: #2196f3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pay_way {
+    padding-left: 39px;
+    padding-top: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.check_way {
+    margin-right: 117px;
+}
+
+.check_way em {
+    color: #d6363b;
+}
+
+.check_pay_way {
+    width: 20px;
+    height: 20px;
+    background: url(/themes/images/apply-sprite.png) no-repeat 0 -22px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: -2px 10px 0 0;
+}
+
+.check_pay_way.active {
+    background: url(/themes/images/apply-sprite.png) no-repeat 0 2px;
+}
+
+.dialog {
+    width: 480px;
+    height: 130px;
+    position: absolute;
+    left: 35%;
+    bottom: 35%;
+    z-index: 9999;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.dialogBg {
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+}
+
+.dialogBg p {
+    text-indent: 50px;
+    color: #999;
+    font-size: 14px;
+}
+
+.dialogBg .pay-tit {
+    /* padding: 0; */
+    margin: 30px 30px 8px;
+    line-height: 30px;
+    text-align: left;
+    background: url(/themes/images/succ-apply.png) no-repeat 0 0;
+    text-indent: 50px;
+    font-size: 20px;
+    color: #333;
+}
+
+.last_time {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #999;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.opcy_new {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    filter: alpha(opacity=30);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9998;
+}
+
+.bidder .bidderCheck {
+    border-bottom: none
+}
+
+.opcy_new {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=60);
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.paystep {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: none;
+}
+
+.paystep ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    background: #ffffff;
+    width: 420px;
+    height: 195px;
+}
+
+.paystep li {
+    text-align: center;
+    padding: 30px 50px 0;
+}
+
+.paystep li p {
+    font-size: 14px;
+    color: #666666;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.paystep li.bind-card {
+    margin: 0;
+    float: right;
+}
+
+.paystep .paystep-top {
+    /* padding-left: 45px; */
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.paystep li.bind-card .paystep-top {
+    padding-left: 25px;
+}
+
+.paystep .paystep-top img {
+    margin-right: 20px;
+    float: left;
+}
+
+.paystep .paystep-top h3 {
+    color: #d6363b;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.paystep .add_card .paystep-top h3 {
+    color: #333;
+}
+
+.paystep .paystep-top p {
+    font-size: 14px;
+    color: #666666;
+    display: inline-block;
+}
+
+.paystep a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d6363b;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.paystep a.not-allowed {
+    background: #d7d7d7;
+    cursor: not-allowed;
+    color: #fff;
+}
+
+.dialogBg .apply-msg {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    text-indent: 0px;
+    line-height: 90px;
+}
+
+.errorDiv {
+    height: 160px;
+    /* top: 80%; */
+}
+
+.closeBtn {
+    text-align: center;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    background: #d6363b;
+    color: #fff;
+    margin-left: 170px;
+    cursor: pointer;
+}
+
+.bidderCheck .sub-title {
+    display: none;
+}

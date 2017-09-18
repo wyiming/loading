@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>标的列表_中拍平台</title>
+    <meta name="keywords" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta name="description" content="司法拍卖,拍卖,法院拍卖,拍卖公告,中国拍卖行业协会,中拍网,司法拍卖下的撤拍,司法拍卖平台,司法拍卖网,公车拍卖,拍卖网站,拍卖流程,网络拍卖,房产拍卖,在线拍卖,法院拍卖网,法院拍卖房产,法院拍卖资产,法院拍卖财产,法院拍卖二手车,房产拍卖公告,法院拍卖公告,拍卖行业协会,司法解释">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/themes/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/css/comm/comm.css">
+    <link rel="stylesheet" href="/themes/css/pages/lotslist.css">
+    <link rel="stylesheet" href="/themes/css/pages/doubleDate.css" />
+</head>
+
+<body>
+    <div class="sifa-head">
+        <div class="container-fluid">
+            <div class="container-title J-container-title">
+                <div class="nologin-info">
+                    <a target="_blank" href="/index.html" class="float-left shop-test">进入测试版</a>
+                    <p>
+                        <a class="shop-official" href="/shop" target="_blank">拍卖企业后台</a>
+                        <a href="/pages/user/register.html">免费注册</a>
+                        <a href="/pages/user/login.html?redirect=http://zy.caa.test/index.html">登录</a>
+                    </p>
+                </div>
+            </div>
+            <div class="nav-con">
+                <div class="container">
+                    <a href="/index.html" class="head-img">
+                        <img src="/themes/images/headbanner.png" alt="司法拍卖" class="caa-logo">
+                    </a>
+                    <div class="nav-wrap clearfix">
+                        <ul class="main-nav">
+                            <li>
+                                <a class="nav-a text14-fff" href="/index.html">首页</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff nav-sifa" href="https://sf.caa123.org.cn" target="_blank">司法</a>
+                            </li>
+                            <li class="active">
+                                <a class="nav-a text14-fff" href="/pages/lots/list.html">标的</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/meeting/list.html">拍卖会</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/notice/list.html">拍卖公告</a>
+                            </li>
+                            <li>
+                                <a class="nav-a text14-fff" href="/pages/enterprises/list.html">拍卖企业</a>
+                            </li>
+                            <!--<li>
+                                <a class="nav-a text14-fff" href="/pages/personal/home.html">我的竞拍</a>
+                            </li>-->
+                        </ul>
+                        <div class="nav-search">
+                            <div class="other-nav">
+                                <a href="/pages/personal/home.html" class="color-333">我的竞拍</a>
+                            </div>
+                            <form class="search-form" action="/pages/lots/list.html" type="get">
+                                <input type="text" name="name" placeholder="搜索标的" class="search-input search-lot">
+                                <button class="search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="auction-filter">
+        <div class="container">
+            <div class="auction-filter-line auction-type">
+                <div class="auction-filter-key">标的类型</div>
+                <div class="auction-filter-value">
+                    <div class="value-no-limited">
+                        <a href="javascript:void(0)" class="active standardtype" data-standardtype="">
+                            <span>全部</span>
+                        </a>
+                    </div>
+                    <ul class="value-limited">
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >机动车<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >房产<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >土地<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >股权债券<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >文艺艺术品<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >农副产品<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >其他交通工具<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >无形资产<i></i></span></a></li>
+                        <li><a href="javascript:void(0);" class="limited-value-list"><span >其他财产<i></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="auction-filter-line auction-locus">
+                <div class="auction-filter-key">标的所在地</div>
+                <div class="auction-filter-value">
+                    <div class="value-no-limited active">
+                        <a href="javascript:void(0)" class="limited-value-list">
+                            <span>全部</span>
+                        </a>
+                    </div>
+                    <ul class="value-limited" id="queryloaction">
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>北京市<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>天津市<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>河北省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>山西省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>内蒙古自治区<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>辽宁省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>吉林省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>黑龙江省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>上海市<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>江苏省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>浙江省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>安徽省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>福建省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>江西省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>山东省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>河南省<i></i></span></a></li>
+                        <!--<li class=""><a href="javascript:void(0);" class="limited-value-list"><span>河北省<i></i></span></a></li>-->
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>湖北省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>湖南省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>广东省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>广西壮族自治区<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>海南省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>重庆市<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>四川省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>贵州省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>云南省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>西藏自治区<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>陕西省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>甘肃省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>青海省<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>宁夏回族自治区<i></i></span></a></li>
+                        <li class=""><a href="javascript:void(0);" class="limited-value-list"><span>新疆维吾尔自治区<i></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="auction-filter-line auction-way">
+                <div class="auction-filter-key">委托类型</div>
+                <div class="auction-filter-value">
+                    <div class="value-no-limited">
+                        <a href="javascript:void(0)" class="active" data-status="-1">
+                            <span>全部</span>
+                        </a>
+                    </div>
+                    <ul class="value-limited">
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="0">
+                                <span>司法委托</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="1">
+                                <span>政府委托</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="2">
+                                <span>金融资产机构委托</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="3">
+                                <span>破产清算组委托</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="4">
+                                <span>其他机构委托</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-attribute="5">
+                                <span>个人委托</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="auction-filter-line auction-status">
+                <div class="auction-filter-key">标的状态</div>
+                <div class="auction-filter-value">
+                    <div class="value-no-limited">
+                        <a href="javascript:void(0)" class="active" data-status="-1">
+                            <span>全部</span>
+                        </a>
+                    </div>
+                    <ul class="value-limited">
+                        <li>
+                            <a href="javascript:void(0)" data-status="1">
+                                <span>正在进行</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-status="0">
+                                <span>即将开始</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-status="3">
+                                <span>成交</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-status="2">
+                                <span>流拍</span>
+                            </a>
+                        </li>
+                        <!-- 
+                        <li>
+                            <a href="javascript:void(0)" data-status="4">
+                                <span>中止</span>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="javascript:void(0)" data-status="5">
+                                <span>撤拍</span>
+                            </a>
+                        </li>
+                        <!--<li>
+                            <a href="javascript:void(0)" data-status="6">
+                                <span>已暂缓</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="auction-filter-line auction-time no-border">
+                <div class="auction-filter-key">开拍时间</div>
+                <div class="auction-filter-value">
+                    <div class="value-no-limited">
+                        <a href="javascript:void(0)" class="active" data-term="-1">
+                            <span>全部</span>
+                        </a>
+                    </div>
+                    <ul class="value-limited">
+                        <li>
+                            <a href="javascript:void(0)" data-term="3">
+                                <span>近3天</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-term="7">
+                                <span>近7天</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-term="15">
+                                <span>近15天</span>
+                            </a>
+                        </li>
+                        <li class="time-warp">
+                            <ul class="iptgroup">
+                                <li>开始时间：</li>
+                                <li><input type="text" readonly="readonly" class="doubledate ipticon starttime" /></li>
+                                <li style="width:20px;"></li>
+                                <li>结束时间：</li>
+                                <li><input type="text" readonly="readonly" class="doubledate ipticon endtime" /></li>
+                                <a class="time-btn active" data-term="">确定</a>
+                                <span class="error"></span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter-end-show">
+        <div class="container">
+            <div class="filter-fixed">
+                <ul class="filter-fixed-show">
+                    <li>
+                        拍卖/变卖（
+                        <span class="count"></span> ）
+                    </li>
+                    <li class="provide-money">
+                        <a href="#void">
+                            <span></span>可贷款
+                        </a>
+                        <a href="#void">
+                            <span></span>不限购
+                        </a>
+                    </li>
+                    <li class="price-input">
+                        <div class="price-input-wrap">
+                            <span>价格</span>
+                            <input type="text" placeholder="¥" value="">
+                            <span>-</span>
+                            <input type="text" placeholder="¥" value="">
+                            <input type="submit" value="确定" class="button">
+                        </div>
+                    </li>
+                    <!--<li class="content-gap"></li>-->
+                    <li class="content-sort">
+                        <a href="javascript:void(0)" class="all-arrow active">
+                            默认
+                        </a>
+                        <a href="javascript:void(0)" class="arrow-toggle">价格<span class="arrow-down"></span></a>
+                        <a href="javascript:void(0)" class="arrow-toggle">出价次数<span class="arrow-down"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="end-filter-content lot-list">
+                <div class="auction-list-wrap">
+                    <!--<ul class="auction-list">-->
+                    <!--</ul>-->
+                </div>
+            </div>
+            <div class="sf-list-wrap lot-empty" style="display:none">
+                <div class="list-content">
+                    <div class="sf-empty">
+                        <p>很抱歉，没有您要找的标的，<br>换个条件试试或者去看看<a href="/pages/meeting/list.html">拍卖会</a>吧</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-wrap lot-list">
+        </div>
+    </div>
+    <!-- -->
+    <div class="sifa-foot J-sifa-foot">
+
+    </div>
+    <script src="/scripts/loading.js?|now|"></script>
+
+</body>
+
+</html>
